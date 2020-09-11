@@ -19,6 +19,9 @@ If you are a FoNS staff member who is going to make larger or more frequent
 commits, you can request write access to this repository by contacting `David
 Ham <mailto:david.ham@imperial.ac.uk>`_.
 
+The master branch of this repository is protected, so even users with write
+access need to push changes on a branch and make a pull request.
+
 Building the website
 --------------------
 
