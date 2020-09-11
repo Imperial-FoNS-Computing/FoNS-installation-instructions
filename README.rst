@@ -1,6 +1,5 @@
-Source for the Imperial College London Faculty of Natural Sciences computational
-software installation instructions
-=================================================================================
+Imperial College London Faculty of Natural Sciences computational software installation instructions
+====================================================================================================
 
 If you are looking for the installation instructions themselves, then you need
 to navigate to `the installation instructions site
@@ -9,7 +8,7 @@ to navigate to `the installation instructions site
 Contributing to the instructions
 --------------------------------
 
-The site is built using `Sphinx <https://www.sphinx-doc.org/en/master/>`, which
+The site is built using `Sphinx <https://www.sphinx-doc.org/en/master/>`_, which
 is a documentation generation system widely used in the Python community and
 beyond. The documentation itself is written in `reStructuredText
 <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_
@@ -47,4 +46,4 @@ every time you save the document. This can be achieved with:
 
     make livehtml
 
-This will serve the constantly updated website on `http://localhost:8000`_.
+This will serve the constantly updated website on `https://localhost:8000 <https://localhost:8000>`_.
