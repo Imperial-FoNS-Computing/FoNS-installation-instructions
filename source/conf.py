@@ -32,14 +32,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
-    'sphinxcontrib.youtube',
-    'sphinx.ext.viewcode',
-    'sphinxcontrib.proof',
-    'sphinxcontrib.bibtex',
-    'IPython.sphinxext.ipython_console_highlighting',
-    'IPython.sphinxext.ipython_directive',
-    'sphinx.ext.graphviz',
-    'sphinxcontrib.blockdiag'
+    'sphinx.ext.viewcode'
 ]
 # Both the class’ and the __init__ method’s docstring are concatenated and
 # inserted into the class definition
@@ -58,9 +51,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Object oriented programming in Python for mathematicians'
-author = u'David A. Ham'
-copyright = u'2019-2020, David A. Ham'
+project = u'Installation instructions for FoNS'
+author = u'Faculty of Natural Sciences'
+copyright = u'2020 Imperial College London'
 
 mathjax_path = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 
@@ -208,7 +201,7 @@ html_use_smartypants = True
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Finiteelementcoursedoc'
+htmlhelp_basename = 'FoNSdoc'
 
 # -- GraphViz configuration -----------------------------------------------
 graphviz_output_format = 'svg'
