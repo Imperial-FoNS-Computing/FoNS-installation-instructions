@@ -1,15 +1,18 @@
 
 
-This is the online textbook for MATH50009 Principles of Programming, a second
-year object oriented programming module offered to mathematics undergraduates at
-Imperial College London. This module will run for the first time starting in
-January 2021, so the material is still very much in development. Feel free to
-use this material to learn object-oriented programming in Python. I would be
-very interested to hear from anyone interested in using it to teach.
+Many modules in the Faculty of Natural Sciences have a programming component,
+and for some of these you may wish to or need to install and configure the
+relevant software tools on your own computer. This website contains instructions
+for the installation and configuration of several packages which are used across
+many modules in the Faculty. Instructions are provided for Windows, Mac and
+Linux computers. 
 
 .. toctree::
    :numbered:
    :maxdepth: 2
 
-   0_introduction.rst
+   0_python.rst
+   1_rstudio.rst
+   2_vscode.rst
+   3_git.rst
   
