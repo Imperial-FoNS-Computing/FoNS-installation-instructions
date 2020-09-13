@@ -15,4 +15,5 @@ Linux computers.
    1_rstudio.rst
    2_vscode.rst
    3_git.rst
-  
+   4_ssh.rst
+   9_homebrew.rst
