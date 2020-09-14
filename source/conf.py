@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# flake8: noqa
 #
 # Object oriented programming course documentation build configuration file, created by
 # sphinx-quickstart on Sat Sep  6 21:48:49 2014.
