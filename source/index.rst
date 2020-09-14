@@ -16,4 +16,5 @@ Linux computers.
    2_vscode.rst
    3_git.rst
    4_ssh.rst
+   8_terminal.rst
    9_homebrew.rst
