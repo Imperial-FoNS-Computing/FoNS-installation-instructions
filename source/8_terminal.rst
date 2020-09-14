@@ -12,6 +12,9 @@ beyond the scope of this document, but some of the installation and
 configuration steps described here need to be run in a terminal so its important
 that you at least know how to start one.
 
+If you need to know more about how to use a command line terminal then you
+should follow the `Software Carpentry tutorial on the Unix Shell <https://swcarpentry.github.io/shell-novice/>`_.
+
 Windows
 -------
 
