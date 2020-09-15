@@ -302,8 +302,23 @@ GitHub account, you might want to `add your Imperial email address to your
 GitHub account
 <https://docs.github.com/en/enterprise/2.15/user/articles/adding-an-email-address-to-your-github-account>`_.
 
+.. _github_classroom_exercise:
 
+Doing coursework using GitHub Classroom
+---------------------------------------
 
+Some modules use GitHub Classroom to distribute, manage, and submit
+computational coursework. This is a trivial example which shows you how to
+obtain and work with Git and GitHub to do your coursework.
 
+Accepting the assignment
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+For each GitHub Classroom assignment, your module will provide access to a link
+that you can use to accept the assignment. In this case, there is a tiny toy
+assignment created just for this exercise. `Accept the assignment by clicking
+here <https://classroom.github.com/a/cChf4oeV>`_.
+
+When you click on the assignment, if you're not already logged into your 
 
 
