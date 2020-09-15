@@ -34,13 +34,7 @@ Installing homebrew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 This will start the install process, and ask you for confirmation before
-installing Homebrew. It's also very likely that some of the packages you will
-install will depend on Apple's basic software development kit, the Command Line
-Tools for XCode. Type the following to install these:
-
-.. code-block:: console
-
-    xcode-select --install
+installing Homebrew. 
 
 Further documentation about Homebrew and its dependencies is available on the
 `Homebrew website <https://brew.sh>`_.
