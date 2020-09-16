@@ -38,3 +38,10 @@ installing Homebrew.
 
 Further documentation about Homebrew and its dependencies is available on the
 `Homebrew website <https://brew.sh>`_.
+
+.. container:: vimeo
+
+    .. raw:: html
+
+        <iframe src="https://player.vimeo.com/video/458330008" frameborder="0" allow="autoplay; fullscreen"
+        allowfullscreen></iframe>
