@@ -288,6 +288,15 @@ Password
     Choose a good, secure password. Do **not** use the same password as you use
     for your Imperial computer account.
 
+.. container:: vimeo
+
+    .. raw:: html
+
+        <iframe src="https://player.vimeo.com/video/458177178" 
+        frameborder="0" allow="autoplay; fullscreen"
+        allowfullscreen></iframe>
+        
+
 Obtaining the GitHub Student Developer Pack
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -319,6 +328,18 @@ that you can use to accept the assignment. In this case, there is a tiny toy
 assignment created just for this exercise. `Accept the assignment by clicking
 here <https://classroom.github.com/a/cChf4oeV>`_.
 
-When you click on the assignment, if you're not already logged into your 
+When you click on the assignment, if you're not already logged into your `GitHub
+<https://GitHub.com>`_ account then you will be prompted to do so. If this is
+your first GitHub Classroom assignment, you'll also be asked to give GitHub
+Classroom permission to access your GitHub account. You should do so.
+
+.. container:: vimeo
+
+    .. raw:: html
+
+        <iframe src="https://player.vimeo.com/video/458609356"
+        frameborder="0" allow="autoplay; fullscreen"
+        allowfullscreen></iframe>
+        
 
 
