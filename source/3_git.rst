@@ -1,7 +1,8 @@
 Git and GitHub Classroom
 ========================
 
-.. contents:: :local:
+.. contents:: 
+    :local:
 
 Introduction
 ------------
@@ -110,43 +111,23 @@ Direct download
 MacOS
 ~~~~~
 
-Homebrew
-........
+All recent versions of MacOS come with Git pre-installed. This version is likely
+to be good enough for many students on many modules, though it probably won't be
+the most recent release.
 
-If you've :ref:`installed Homebrew <homebrew>` then installing Git is as simple
-as :ref:`opening a terminal <macos_terminal>` and running the following command:
+If you want a more recent version and you've :ref:`installed Homebrew
+<homebrew>` then installing Git is as simple as :ref:`opening a terminal
+<macos_terminal>` and running the following command:
 
 .. code-block:: console
 
     % brew install git
 
-Now proceed to :ref:`check the install <macos_check_git>`.
+Now proceed to :ref:`check the install <check_git>`.
 
-Direct download
-...............
-
-
-.. _macos_check_git:
-
-Check the install
-.................
-
-Check that you've got a successfully working Git by running this in the
-terminal:
-
-.. code-block:: console
-
-    % git --version
-
-The expected output is something like:
-
-.. code-block:: console
-
-    % git version 2.28.0
-
-The exact version may be a little different. This is not important.
-
-Proceed now to :ref:`configure Git <configure_git>`.
+If you need a more recent version of Git and you don't want to install Homebrew
+for whatever reason, then there are more options on `the Git MacOS download
+website <https://git-scm.com/download/mac>`_
 
 Linux
 ~~~~~
@@ -174,6 +155,11 @@ or if you're using an older version of these distributions:
 
 If you're using a different Linux distribution then you'll probably find the
 correct install line `on the Git Linux download website <https://git-scm.com/download/linux>`_.
+
+.. _check_git:
+
+Check the install
+~~~~~~~~~~~~~~~~~
 
 Check that you've got a successfully working Git by running this in the
 terminal:
