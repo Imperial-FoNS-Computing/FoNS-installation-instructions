@@ -1,6 +1,8 @@
 Git and GitHub Classroom
 ========================
 
+.. contents:: :local:
+
 Introduction
 ------------
 
@@ -111,12 +113,12 @@ MacOS
 Homebrew
 ........
 
-If you've :ref:`installed Homebrew <homebrew>` then installing git is as simple
+If you've :ref:`installed Homebrew <homebrew>` then installing Git is as simple
 as :ref:`opening a terminal <macos_terminal>` and running the following command:
 
-.. code-block::
+.. code-block:: console
 
-    brew install git
+    % brew install git
 
 Now proceed to :ref:`check the install <macos_check_git>`.
 
@@ -134,13 +136,13 @@ terminal:
 
 .. code-block:: console
 
-    git --version
+    % git --version
 
 The expected output is something like:
 
 .. code-block:: console
 
-    git version 2.28.0
+    % git version 2.28.0
 
 The exact version may be a little different. This is not important.
 
@@ -149,26 +151,26 @@ Proceed now to :ref:`configure Git <configure_git>`.
 Linux
 ~~~~~
 
-Every Linux distribution ships git through its package manager. The easiest way
-to install git is usually to simply do whatever it is that is normal on your
+Every Linux distribution ships Git through its package manager. The easiest way
+to install Git is usually to simply do whatever it is that is normal on your
 distribution to install software. For example on Ubuntu or any other
 Debian-based system you would run this in the terminal:
 
 .. code-block:: console
 
-    sudo apt-get install git
+    % sudo apt-get install git
 
 While on Fedora and related distributions, you would run:
 
 .. code-block:: console
 
-    sudo dnf install git
+    % sudo dnf install git
 
 or if you're using an older version of these distributions:
 
 .. code-block:: console
 
-    sudo yum install git
+    % sudo yum install git
 
 If you're using a different Linux distribution then you'll probably find the
 correct install line `on the Git Linux download website <https://git-scm.com/download/linux>`_.
@@ -178,13 +180,13 @@ terminal:
 
 .. code-block:: console
 
-    git --version
+    % git --version
 
 The expected output is something like:
 
 .. code-block:: console
 
-    git version 2.28.0
+    % git version 2.28.0
 
 The exact version may be a little different. This is not important.
 
@@ -215,8 +217,8 @@ appropriate:
 
 .. code-block:: console
 
-    git config --global user.name "Jo Student"
-    git config --global user.email "Jo.Student20@imperial.ac.uk"
+    % git config --global user.name "Jo Student"
+    % git config --global user.email "Jo.Student20@imperial.ac.uk"
 
 Line endings
 ~~~~~~~~~~~~
@@ -235,7 +237,7 @@ Run the following command in the :ref:`Git Bash terminal <terminal>`:
 
 .. code-block:: console
 
-    git config --global core.autocrlf true
+    % git config --global core.autocrlf true
 
 MacOS or Linux
 ..............
@@ -244,7 +246,7 @@ Run the following command in the :ref:`terminal <terminal>`:
 
 .. code-block:: console
 
-    git config --global core.autocrlf input
+    % git config --global core.autocrlf input
 
 Text editor
 ~~~~~~~~~~~
@@ -256,7 +258,7 @@ the following line in the terminal:
 
 .. code-block:: console
 
-    git config --global core.editor "nano -w"
+    % git config --global core.editor "nano -w"
 
 If you have a favourite text editor, you can set it using the `Software
 Carpentry instructions
@@ -320,6 +322,15 @@ Some modules use GitHub Classroom to distribute, manage, and submit
 computational coursework. This is a trivial example which shows you how to
 obtain and work with Git and GitHub to do your coursework.
 
+.. container:: vimeo
+
+    .. raw:: html
+
+        <iframe src="https://player.vimeo.com/video/458609356"
+        frameborder="0" allow="autoplay; fullscreen"
+        allowfullscreen></iframe>
+
+
 Accepting the assignment
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -333,13 +344,370 @@ When you click on the assignment, if you're not already logged into your `GitHub
 your first GitHub Classroom assignment, you'll also be asked to give GitHub
 Classroom permission to access your GitHub account. You should do so.
 
-.. container:: vimeo
+You will now be asked to accept the assignment. Do so by clicking on the large
+green button. GitHub Classroom will now create a new repository containing your
+personal copy of the assignment. You can click on the link provided to navigate
+to your new GitHub repository. You will also receive an email inviting you to
+this repository. Depending on which module you are taking, the repository might
+be in a GitHub organisation which uses Imperial's authentication system. If it
+does, then you'll be redirected to Imperial's login page and you'll need to
+enter your Imperial (not GitHub) username and password.
 
-    .. raw:: html
+If we scroll down on the front page of the GitHub repository website, we see the
+README file for the repository. In this case, this gives us the instructions for
+the assignment. Depending on the module, the instructions might be somewhere
+else, such as on a module website or on Blackboard. This time, we see this:
 
-        <iframe src="https://player.vimeo.com/video/458609356"
-        frameborder="0" allow="autoplay; fullscreen"
-        allowfullscreen></iframe>
+.. image:: _static/git_exercise.*
+
+So what we have to do is:
+
+    1. Edit `exercise.txt` to replace "Hello World" with "Hello Mars!"
+    2. Commit this change.
+    3. Push the result to GitHub.
+
+We'll go through each of these steps and what they mean below. First, though,
+we'll need to clone the repository to our computer.
+
+Cloning the repository
+~~~~~~~~~~~~~~~~~~~~~~
+
+Your new repository currently exists only on `GitHub <https://github.com>`_, but
+you need a local copy on your machine (or on a remote machine that you're logged
+into) in order to work on it. This is called cloning the repository. Here
+we show how to do this using commands in the terminal, because this approach is 
+the most likely to be available on all systems.
+So, start by :ref:`opening a terminal <terminal>`. 
+
+Next, you will need the URL of your GitHub repository. On the repository
+webpage, click on the large green `Code` button on the right:
+
+.. image:: _static/git_clone.*
+
+Click on the little picture of a clipboard to copy the URL. Now, back in your
+terminal type (without pressing `enter`):
+
+.. code-block:: console
+
+    % git clone
+
+Paste the URL you copied into the terminal after `clone` and then press `enter`.
+If you are asked for your GitHub username and password, enter them, and the
+repository will download. The process should look a little like this:
+
+.. code-block:: console
+
+    % git clone https://github.com/imperiallearn/fons-test-assignment-dham-test.git
+    Cloning into 'fons-test-assignment-dham-test'...
+    remote: Enumerating objects: 24, done.
+    remote: Counting objects: 100% (24/24), done.
+    remote: Compressing objects: 100% (18/18), done.
+    remote: Total 24 (delta 5), reused 5 (delta 0), pack-reused 0
+    Unpacking objects: 100% (24/24), 4.04 KiB | 172.00 KiB/s, done.
+    % 
         
+This will create a new folder in the current folder containing the repository.
+The folder will have the same name as the repository on GitHub, so in this case
+it's called `fons-test-assignment-dham-test`. The command to change the current
+folder is `cd` (for "change directory") so we now change into our repository:
+
+.. code-block:: console
+
+    % cd fons-test-assignment-dham-test
+
+We can now check that we're in the folder we think we're in by running the
+command `pwd` ("print working directory"):
+
+.. code-block:: console
+
+    % pwd
+    % /Users/dham/fons-test-assignment-dham-test
+
+This shows me that we're in the `fons-test-assignment-dham-test` folder in my user
+folder (`/Users/dham`), which is what I expect.
+
+Editing `exercise.txt`
+~~~~~~~~~~~~~~~~~~~~~~
+
+I can now check out what's in
+this folder with the `ls` command (for "list"):
+
+.. code-block:: console
+
+    % ls 
+    LICENSE		README.rst	exercise.txt	tests
+
+There are four files or folders here, one of which is `exercise.txt`, which is
+the one I need to edit. I could use any text editor for this purpose, for
+example if I have Visual Studio Code installed then this would be a very
+suitable editor. However here we'll only assume that you've installed `Git` so
+we'll use the very basic editor `nano`, which is almost certainly installed:
+
+.. code-block:: console
+
+    % nano exercise.txt
+
+This will open the nano editor in your terminal. You should see something like
+the following:
+
+.. image:: _static/nano.*
+
+Now you can use the arrow keys and keyboard to delete "World" and replace it
+with "Mars!" (rememember the exclamation mark!) Don't try to move to the end of
+the line by clicking with the mouse, that won't work (nano is far too basic for
+that!)
+
+Once you've edited the line, you need to save the file and quit nano. Helpfully,
+nano shows a lot of its options along the bottom of the screen. We just need to
+know that the caret symbol (`^`) stands for the `control` key. So we press
+`control + O` to write out (save) our changes (Note for Mac users, this really
+does mean the `control` key, and not ⌘). Nano will offer us the option of
+changing the filename, but we don't want to do that so we just press `enter` to
+save to the same file:
+
+.. image:: _static/nano-write-out.png
+
+Next we quit nano by typing `control + X`.
+
+Committing our changes
+~~~~~~~~~~~~~~~~~~~~~~
+
+Now that we've changed `exercise.txt`, we need to tell Git to record this
+change. Each change (to one or many files) that we tell Git about is called a
+"commit" and the process is called "committing". First, we take a look at what
+Git can currently see about our repository. The command for this, indeed the go
+to command whenever you're not quite sure what's going on in your Git
+repository, is:
+
+.. code-block:: console
+
+    % git status
+    On branch master
+    Your branch is up to date with 'origin/master'.
+
+    Changes not staged for commit:
+       (use "git add <file>..." to update what will be committed)
+       (use "git restore <file>..." to discard changes in working directory)
+    	     modified:   exercise.txt
+
+    no changes added to commit (use "git add" and/or "git commit -a")
+
+Let's pull this apart line by line. The first line says that we're on the
+`master` branch. Branches are a somewhat more advanced feature, but here we only
+need to understand that `master` is the default name for the main place to store
+commits in a Git repository. 
+
+To understand the second line, we need to know that Git, by default, calls our
+repository on GitHub `origin`. So the second line means that, as far as Git can
+see, every commit that exists on our machine is also on GitHub, and vice versa.
+
+Next comes a blank line, we'll come back to what might appear there shortly. The
+next line says "Changes not staged for commit". This means that Git can see that
+these files have changed or have been added, but Git has not been told that they
+should be committed. Git is also very helpful in telling us what we probably
+want to do next, so we are informed that we can tell Git that we intend to
+commit a file using `git add`, or we can undo the changes in a file back to the
+last committed version using `git restore`. Finally, Git tells us that right now
+there are no changes added to commit, so we either need to use `git add` or the
+shortcut version `git commit -a`. We'll come back to the second of those
+presently, but first let's learn about `git add`.
+
+Staging files for commit
+........................
+
+We want to commit our changes to `exercise.txt`, so we tell Git to add it to the
+list of files to be committed:
+
+.. code-block:: console
+
+    git add exercise.txt
+
+We can check what that did by running `git status`:
+
+.. code-block:: console
+
+    % git status          
+    On branch master
+    Your branch is up to date with 'origin/master'.
+
+    Changes to be committed:
+      (use "git restore --staged <file>..." to unstage)
+    	modified:   exercise.txt
+
+The first two lines of the output are unchanged, but now we see that
+`exercise.txt` appears on the list of changes to be committed. We say that the
+changes are "staged" for commit. Git once again helpfully tells us that if we
+didn't mean to do that then we should use the command `git restore --staged` to
+unstage the file. However, we did mean to stage `exercise.txt` so now we can go
+on to make the actual commit.
+
+.. warning::
+
+    Some sites on the internet advocate the following version of `git add`:
+
+    .. container:: badcode
+
+        .. code-block:: console
+
+            % git add -A
+
+    This is a **very bad** idea. What this command does is stage for commit
+    every file in the repository that is not exactly the same as the already
+    committed version. This can include any number of automatically generated
+    binary files that you have generated or that your computer uses to manage
+    the file system. Committing these files makes a complete mess of your
+    repository and can cause conflicts if you try to clone your repository on
+    another machine. Don't use `git commit -A`!
+
+The actual commit
+.................
+
+Having staged the file(s) for commit, we need to actually make the commit. We do
+this with the following command:
+
+.. code-block:: console
+
+    % git commit -m "Changed World to Mars"
+    [master 7ad3846] Changed World to Mars
+     1 file changed, 1 insertion(+), 1 deletion(-)
+
+`git commit` tells Git to commit all staged files. Git always needs a message
+describing what has changed. I've provided this by passing the `-m` option
+followed by the commit message in quotation marks. If I were to leave off the
+`-m` option and commit message, then Git would open the text editor I configured
+earlier (nano) for me to enter the commit message. I would save the commit
+message and quit the editor, after which the commit would go ahead as above.
+
+Let's use our go to command, `git status` to see what we've done:
+
+.. code-block:: console
+
+    % git status
+    On branch master
+    Your branch is ahead of 'origin/master' by 1 commit.
+      (use "git push" to publish your local commits)
+
+    nothing to commit, working tree clean
+
+This is now quite different from what we've seen before. We're still on branch
+master, but now we're informed that we're ahead of `origin/master` by one
+commit. This is because we've made a commit locally on our machine, but we
+haven't yet pushed that change up to GitHub. Git helpfully informs us that we
+could remedy this situation using `git push`. Because we've committed all the
+changes we made, we're also informed that there is nothing more to commit.
+
+Before we proceed to pushing our changes to GitHub, we'll take a look at a
+quicker way to stage and commit changes in a single command.
+
+Stage and commit in a single command
+....................................
+
+Most of the time, you will make changes to one or more files that Git already
+knows about. In these circumstances, there's a shortcut command, and it's one
+that Git already hinted to us about. Instead of separately running `git add`
+followed by `git commit`, we can use `git commit -a`. We still need to provide a
+commit message, so the equivalent to the two commands above would be:
+
+.. code-block:: console
+
+    % git commit -am "Changed World to Mars"
+    [master 5a4a79c] Changed World to Mars
+     1 file changed, 1 insertion(+), 1 deletion(-)
+
+Now if we type `git status`, we discover we are in exactly the same state as
+when we type the two commands separately:
+
+.. code-block:: console
+
+    % git status
+    On branch master
+    Your branch is ahead of 'origin/master' by 1 commit.
+      (use "git push" to publish your local commits)
+
+    nothing to commit, working tree clean
+
+Pushing changes to GitHub
+.........................
+
+The final stage in the commit process is to push the changes we have made up to
+GitHub:
+
+.. code-block:: console
+
+    % git push
+    Enumerating objects: 5, done.
+    Counting objects: 100% (5/5), done.
+    Delta compression using up to 4 threads
+    Compressing objects: 100% (2/2), done.
+    Writing objects: 100% (3/3), 280 bytes | 35.00 KiB/s, done.
+    Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+    remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+    To https://github.com/imperiallearn/fons-test-assignment-dham-test.git
+       d91be89..5a4a79c  master -> master
+
+Depending on your configuration, you might have to enter your GitHub username
+and password. The output includes quite a lot of detail that we currently don't
+care about, but the last two lines tell us which GitHub repository we were
+pushing to, and that we pushed the local master branch to the GitHub master
+branch.
+
+If we now type `git status`, we find that we are no longer ahead of
+`origin/master`:
+
+.. code-block:: console
+
+    % git status
+    On branch master
+    Your branch is up to date with 'origin/master'.
+
+    nothing to commit, working tree clean
+
+If we turn back to the repository website on GitHub, we can also see that the commit has arrived:
+
+.. image:: _static/github_post_commit.*
+
+Notice that we can see the commit message both in the blue bar at the top of the
+file list, and next to the file that we changed. By clicking on the `commits`
+link at the right hand side of the blue bar, we can see a list of all the
+changes that have ever happened on the master branch of our repository:
+
+.. image:: _static/github_commit_list.*
+
+Clicking on the title of any of these commits, produces a colour-coded
+rendition of the exact changes that occurred at that commit. For example, if we
+click on the title of the commit that we just made, then we find:
+
+.. image:: _static/github_diff.*
+
+Autograding
+~~~~~~~~~~~
+
+Notice in the commit list above that the final (top) commit has a green tick
+mark next to it, while the previous commit has a red cross. These marks appear
+because this exercise has autograding set up in GitHub classroom. Autograding is
+a mechanism for automatically running tests on each commit to provide immediate
+feedback as to the correctness of the work. Autograding is the generic term for
+this sort of automated testing when applied to coursework. It doesn't
+necessarily imply that you will receive marks for passing the tests. If we click
+on the green tick and then on `details`, we can see a little more information:
+
+.. image:: _static/github_autograding_pass.*
+
+This case isn't all that interesting, because we're passing everything.
+It's actually more interesting to go back and click on the red cross:
+
+.. image:: _static/github_autograding_fail.*
+
+By expanding the line with the red cross and scrolling down, we can see the
+details of the test that has failed. Hopefully this will give us some indication
+as to what we have done wrong:
+
+.. image:: _static/github_autograding_fail_detail.*
+
+This is indeed very useful as the error tells us that the test was expecting
+"Hello Mars!" but instead found "Hello World". This is clearly a trivial
+example. The precise form of the tests and the feedback they will provide will
+vary from module to module, and will depend in particular on which programming
+language is being used.
 
 
