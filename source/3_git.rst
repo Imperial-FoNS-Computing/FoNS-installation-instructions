@@ -127,7 +127,7 @@ Now proceed to :ref:`check the install <check_git>`.
 
 If you need a more recent version of Git and you don't want to install Homebrew
 for whatever reason, then there are more options on `the Git MacOS download
-website <https://git-scm.com/download/mac>`_
+website <https://git-scm.com/download/mac>`_.
 
 Linux
 ~~~~~
@@ -543,7 +543,7 @@ on to make the actual commit.
     binary files that you have generated or that your computer uses to manage
     the file system. Committing these files makes a complete mess of your
     repository and can cause conflicts if you try to clone your repository on
-    another machine. Don't use `git commit -A`!
+    another machine. Don't use `git add -A`!
 
 The actual commit
 .................
