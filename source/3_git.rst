@@ -121,7 +121,7 @@ If you want a more recent version and you've :ref:`installed Homebrew
 
 .. code-block:: console
 
-    % brew install git
+    $ brew install git
 
 Now proceed to :ref:`check the install <check_git>`.
 
@@ -139,19 +139,19 @@ Debian-based system you would run this in the terminal:
 
 .. code-block:: console
 
-    % sudo apt-get install git
+    $ sudo apt-get install git
 
 While on Fedora and related distributions, you would run:
 
 .. code-block:: console
 
-    % sudo dnf install git
+    $ sudo dnf install git
 
 or if you're using an older version of these distributions:
 
 .. code-block:: console
 
-    % sudo yum install git
+    $ sudo yum install git
 
 If you're using a different Linux distribution then you'll probably find the
 correct install line `on the Git Linux download website <https://git-scm.com/download/linux>`_.
@@ -166,13 +166,13 @@ terminal:
 
 .. code-block:: console
 
-    % git --version
+    $ git --version
 
 The expected output is something like:
 
 .. code-block:: console
 
-    % git version 2.28.0
+    $ git version 2.28.0
 
 The exact version may be a little different. This is not important.
 
@@ -203,8 +203,8 @@ appropriate:
 
 .. code-block:: console
 
-    % git config --global user.name "Jo Student"
-    % git config --global user.email "Jo.Student20@imperial.ac.uk"
+    $ git config --global user.name "Jo Student"
+    $ git config --global user.email "Jo.Student20@imperial.ac.uk"
 
 Line endings
 ~~~~~~~~~~~~
@@ -223,7 +223,7 @@ Run the following command in the :ref:`Git Bash terminal <terminal>`:
 
 .. code-block:: console
 
-    % git config --global core.autocrlf true
+    $ git config --global core.autocrlf true
 
 MacOS or Linux
 ..............
@@ -232,7 +232,7 @@ Run the following command in the :ref:`terminal <terminal>`:
 
 .. code-block:: console
 
-    % git config --global core.autocrlf input
+    $ git config --global core.autocrlf input
 
 Text editor
 ~~~~~~~~~~~
@@ -244,7 +244,7 @@ the following line in the terminal:
 
 .. code-block:: console
 
-    % git config --global core.editor "nano -w"
+    $ git config --global core.editor "nano -w"
 
 If you have a favourite text editor, you can set it using the `Software
 Carpentry instructions
@@ -375,7 +375,7 @@ terminal type (without pressing `enter`):
 
 .. code-block:: console
 
-    % git clone
+    $ git clone
 
 Paste the URL you copied into the terminal after `clone` and then press `enter`.
 If you are asked for your GitHub username and password, enter them, and the
@@ -383,14 +383,14 @@ repository will download. The process should look a little like this:
 
 .. code-block:: console
 
-    % git clone https://github.com/imperiallearn/fons-test-assignment-dham-test.git
+    $ git clone https://github.com/imperiallearn/fons-test-assignment-dham-test.git
     Cloning into 'fons-test-assignment-dham-test'...
     remote: Enumerating objects: 24, done.
     remote: Counting objects: 100% (24/24), done.
     remote: Compressing objects: 100% (18/18), done.
     remote: Total 24 (delta 5), reused 5 (delta 0), pack-reused 0
-    Unpacking objects: 100% (24/24), 4.04 KiB | 172.00 KiB/s, done.
-    % 
+    Unpacking objects: 100$ (24/24), 4.04 KiB | 172.00 KiB/s, done.
+    $ 
         
 This will create a new folder in the current folder containing the repository.
 The folder will have the same name as the repository on GitHub, so in this case
@@ -399,15 +399,15 @@ folder is `cd` (for "change directory") so we now change into our repository:
 
 .. code-block:: console
 
-    % cd fons-test-assignment-dham-test
+    $ cd fons-test-assignment-dham-test
 
 We can now check that we're in the folder we think we're in by running the
 command `pwd` ("print working directory"):
 
 .. code-block:: console
 
-    % pwd
-    % /Users/dham/fons-test-assignment-dham-test
+    $ pwd
+    $ /Users/dham/fons-test-assignment-dham-test
 
 This shows me that we're in the `fons-test-assignment-dham-test` folder in my user
 folder (`/Users/dham`), which is what I expect.
@@ -420,7 +420,7 @@ this folder with the `ls` command (for "list"):
 
 .. code-block:: console
 
-    % ls 
+    $ ls 
     LICENSE		README.rst	exercise.txt	tests
 
 There are four files or folders here, one of which is `exercise.txt`, which is
@@ -431,7 +431,7 @@ we'll use the very basic editor `nano`, which is almost certainly installed:
 
 .. code-block:: console
 
-    % nano exercise.txt
+    $ nano exercise.txt
 
 This will open the nano editor in your terminal. You should see something like
 the following:
@@ -467,7 +467,7 @@ repository, is:
 
 .. code-block:: console
 
-    % git status
+    $ git status
     On branch master
     Your branch is up to date with 'origin/master'.
 
@@ -512,7 +512,7 @@ We can check what that did by running `git status`:
 
 .. code-block:: console
 
-    % git status          
+    $ git status          
     On branch master
     Your branch is up to date with 'origin/master'.
 
@@ -535,7 +535,7 @@ on to make the actual commit.
 
         .. code-block:: console
 
-            % git add -A
+            $ git add -A
 
     This is a **very bad** idea. What this command does is stage for commit
     every file in the repository that is not exactly the same as the already
@@ -553,7 +553,7 @@ this with the following command:
 
 .. code-block:: console
 
-    % git commit -m "Changed World to Mars"
+    $ git commit -m "Changed World to Mars"
     [master 7ad3846] Changed World to Mars
      1 file changed, 1 insertion(+), 1 deletion(-)
 
@@ -568,7 +568,7 @@ Let's use our go to command, `git status` to see what we've done:
 
 .. code-block:: console
 
-    % git status
+    $ git status
     On branch master
     Your branch is ahead of 'origin/master' by 1 commit.
       (use "git push" to publish your local commits)
@@ -596,7 +596,7 @@ commit message, so the equivalent to the two commands above would be:
 
 .. code-block:: console
 
-    % git commit -am "Changed World to Mars"
+    $ git commit -am "Changed World to Mars"
     [master 5a4a79c] Changed World to Mars
      1 file changed, 1 insertion(+), 1 deletion(-)
 
@@ -605,7 +605,7 @@ when we type the two commands separately:
 
 .. code-block:: console
 
-    % git status
+    $ git status
     On branch master
     Your branch is ahead of 'origin/master' by 1 commit.
       (use "git push" to publish your local commits)
@@ -620,7 +620,7 @@ GitHub:
 
 .. code-block:: console
 
-    % git push
+    $ git push
     Enumerating objects: 5, done.
     Counting objects: 100% (5/5), done.
     Delta compression using up to 4 threads
@@ -642,7 +642,7 @@ If we now type `git status`, we find that we are no longer ahead of
 
 .. code-block:: console
 
-    % git status
+    $ git status
     On branch master
     Your branch is up to date with 'origin/master'.
 
