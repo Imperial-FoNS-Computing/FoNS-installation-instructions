@@ -102,11 +102,28 @@ Installing Git
 Windows
 ~~~~~~~
 
+Direct download
+...............
+
+To install Git directly, navigate to `the Git Windows download website
+<https://git-scm.com/download/win>`__. If the download doesn't start
+immediately, click on `Click here to download manually`. Run the installer.
+Unless you have specific reasons to do otherwise, it's reasonable to accept all
+the defaults by clicking `next` each time.
+
+Now proceed to :ref:`check the install <check_git>`.
+
 Software Hub
 ............
 
-Direct download
-...............
+Follow the instructions on `the Imperial Software Hub website
+<https://www.imperial.ac.uk/admin-services/ict/self-service/computers-printing/devices-and-software/get-software/software-hub/>`_.
+
+The version of Git on Software Hub is somewhat older and has compatibility
+issues with the most recent versions of :ref:`Visual Studio Code
+<visual-studio-code>`.
+
+Now proceed to :ref:`check the install <check_git>`.
 
 MacOS
 ~~~~~
@@ -162,7 +179,7 @@ Check the install
 ~~~~~~~~~~~~~~~~~
 
 Check that you've got a successfully working Git by running this in the
-terminal:
+:ref:`terminal`:
 
 .. code-block:: console
 
@@ -172,7 +189,7 @@ The expected output is something like:
 
 .. code-block:: console
 
-    $ git version 2.28.0
+    git version 2.28.0
 
 The exact version may be a little different. This is not important.
 
