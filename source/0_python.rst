@@ -25,6 +25,10 @@ Installing Python
 Windows
 ~~~~~~~
 
+You can obtain Anaconda `using the Anaconda Windows installation site
+<https://docs.anaconda.com/anaconda/install/windows/>`__. Simply follow the
+instructions there to download and run the installer.
+
 MacOS
 ~~~~~
 
