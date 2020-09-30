@@ -16,6 +16,7 @@ Linux computers.
    vscode.rst
    git.rst
    ssh.rst
+   latex.rst
    linux.rst
    terminal.rst
    homebrew.rst
