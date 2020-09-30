@@ -1,17 +1,17 @@
-.. _DIYLinux:
+.. linux:
 
-DIY Linux  
+Installing Linux  
 ==========
+
+We recommend Ubuntu as the go to Linux "flavour" for students and staff as there is some level of ICT support for it. Advanced users are free to use their own flavor such as Fedora, Mint, etc. 
 
 Installing Ubuntu
 -----------------
 
 You may already have (or received) a bootable USB stick with Ubuntu 20.04 (64
-bit) installer on it. If you didn't or would rather make your own
-(indeed, why not?!), `its pretty
-easy <https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0>`__.
-
-To 
+bit) installer on it. If you didn't or would rather make your own (indeed, why
+not?!), `its pretty easy
+<https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0>`__.
 
 Ubuntu-only install
 ~~~~~~~~~~~~~~~~~~~
@@ -104,14 +104,16 @@ In terminal you can simply enter “f” to open nautilus in current
 directory by doing the following. Firstly make a ``.bash_aliases`` file,
 then open it for editing:
 
-.. code:: bash
+.. code-block:: console
 
-    touch ~/.bash_aliases
-    gedit ~/.bash_aliases
+    $ touch ~/.bash_aliases
+    $ gedit ~/.bash_aliases
 
 Next add to the last line of the file, add:
 
-``alias f='nautilus .'``
+.. code-block:: console
+
+    $ alias f='nautilus . &'
 
 Then restart terminal, or in current terminal, type:
 
