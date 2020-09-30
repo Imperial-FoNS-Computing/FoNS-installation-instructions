@@ -11,13 +11,13 @@ installed by typing a simple command such as:
 
 .. code-block:: console
 
-    brew install git
+    $ brew install git
 
 or, for graphical packages:
 
 .. code-block:: console
 
-    brew cask install visual-studio-code
+    $ brew cask install visual-studio-code
 
 You don't strictly need Homebrew in order to install the packages you need to do
 your module: you can instead install each one using its graphical install
@@ -27,11 +27,11 @@ particularly if your modules require several packages to be installed.
 Installing homebrew
 -------------------
 
-`Open a terminal <terminal>`_ and type:
+:ref:`Open a terminal <terminal-mac>` and type:
 
 .. code-block:: console
 
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 This will start the install process, and ask you for confirmation before
 installing Homebrew. 
