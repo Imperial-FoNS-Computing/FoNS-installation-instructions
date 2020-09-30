@@ -13,11 +13,8 @@ locations to edit the same files collaboratively. This is an immense aid to
 group work or getting help from the lecturer when you're not physically in the
 same room.
 
-Installing Visual Studio Code
------------------------------
-
-Windows
-~~~~~~~
+Installing Visual Studio Code on Windows
+----------------------------------------
 
 Direct download
 ...............
@@ -39,8 +36,8 @@ Follow the instructions on `the Imperial Software Hub website
 Because this is a slightly older version, and updates come out every month, you
 will immediately be prompted to update.
 
-MacOS
-~~~~~
+Installing Visual Studio Code on Mac
+------------------------------------
 
 HomeBrew
 ........
@@ -74,12 +71,10 @@ then you'll need to do a little more setup from inside the program itself,
 following the instructions `on the Microsoft Visual Studio Code website
 <https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line>`__.
 
-Linux 
-~~~~~
+Installing Visual Studio Code on Linux 
+--------------------------------------
 
 Microsoft provide Visual Studio Code packages for a number of Linux
 distributions. See the `Visual Studio Code Linux installation webpage
 https://code.visualstudio.com/docs/setup/linux`_.
 
-Installing necessary extensions
--------------------------------

@@ -98,16 +98,13 @@ doing a particular coding exercise with their own repository on GitHub that's
 prepopulated with the lecturer's skeleton code and ready to work with. As we'll
 see below, this makes it really easy to obtain the exercise and work with it.
 
-Installing Git
---------------
-
 .. _git-windows:
 
-Windows
-~~~~~~~
+Installing Git on Windows
+-------------------------
 
 Direct download
-...............
+~~~~~~~~~~~~~~~
 
 To install Git directly, navigate to `the Git Windows download website
 <https://git-scm.com/download/win>`__. If the download doesn't start
@@ -118,7 +115,7 @@ the defaults by clicking `next` each time.
 Now proceed to :ref:`check the install <check_git>`.
 
 Software Hub
-............
+~~~~~~~~~~~~
 
 Follow the instructions on `the Imperial Software Hub website
 <https://www.imperial.ac.uk/admin-services/ict/self-service/computers-printing/devices-and-software/get-software/software-hub/>`_.
@@ -129,8 +126,8 @@ issues with the most recent versions of :ref:`Visual Studio Code
 
 Now proceed to :ref:`check the install <check_git>`.
 
-MacOS
-~~~~~
+Installing Git on Mac
+---------------------
 
 All recent versions of MacOS come with Git pre-installed. This version is likely
 to be good enough for many students on many modules, though it probably won't be
@@ -150,8 +147,8 @@ If you need a more recent version of Git and you don't want to install Homebrew
 for whatever reason, then there are more options on `the Git MacOS download
 website <https://git-scm.com/download/mac>`_.
 
-Linux
-~~~~~
+Installing Git on Linux
+-----------------------
 
 Every Linux distribution ships Git through its package manager. The easiest way
 to install Git is usually to simply do whatever it is that is normal on your
@@ -180,7 +177,7 @@ correct install line `on the Git Linux download website <https://git-scm.com/dow
 .. _check_git:
 
 Check the install
-~~~~~~~~~~~~~~~~~
+-----------------
 
 Check that you've got a successfully working Git by running this in the
 :ref:`terminal`:
