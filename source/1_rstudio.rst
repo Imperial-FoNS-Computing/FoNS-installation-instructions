@@ -37,11 +37,6 @@ The easiest way to install R and RStudio on Mac is to :ref:`install Homebrew
     $ brew cask install r
     $ brew cask install rstudio
 
-You then launch RStudio by pressing `⌘ + space` to open Spotlight search and
-type `rstudio` in the resulting search box:
-
-.. image:: _static/spotlight-rstudio.png
-
 Direct install
 ~~~~~~~~~~~~~~
 
@@ -54,4 +49,12 @@ default options.
 RStudio can be installed from the `RStudio install page
 <https://rstudio.com/products/rstudio/download/#download>`__. Usually the big
 blue button will automatically detect the right version. Again, run the
-installer and accept the 
+installer and accept the default options.
+
+Running RStudio
+~~~~~~~~~~~~~~~
+
+You launch RStudio by pressing `⌘ + space` to open Spotlight search and
+type `rstudio` in the resulting search box:
+
+.. image:: _static/spotlight-rstudio.png
