@@ -35,6 +35,8 @@ Bash by typing `git bash` into the search box:
 
 .. image:: _static/git-bash.png
 
+.. _terminal-mac:
+
 MacOS
 -----
 
