@@ -11,10 +11,11 @@ Linux computers.
    :numbered:
    :maxdepth: 2
 
-   0_python.rst
-   1_rstudio.rst
-   2_vscode.rst
-   3_git.rst
-   4_ssh.rst
-   8_terminal.rst
-   9_homebrew.rst
+   python.rst
+   rstudio.rst
+   vscode.rst
+   git.rst
+   ssh.rst
+   linux.rst
+   terminal.rst
+   homebrew.rst
