@@ -1,7 +1,7 @@
 .. _homebrew:
 
-Homebrew
-========
+Homebrew for Mac
+================
 
 `Homebrew <https://brew.sh>`__ is a package manager, primarily for MacOS. What
 this means is that it provides a mechanism for easily installing a wide range of

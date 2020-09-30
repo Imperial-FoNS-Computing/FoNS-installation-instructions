@@ -64,8 +64,7 @@ Opening a terminal within Visual Studio Code
 --------------------------------------------
 
 If you have installed :ref:`visual-studio-code` then you can launch a terminal
-from within the program by selecting `new terminal` in the `terminal` menu, or
-by pressing `control + ~`. This will start a new terminal at the bottom of the
-Visual Studio Code Window.
+from within the program by selecting `new terminal` in the `terminal` menu. This
+will start a new terminal at the bottom of the Visual Studio Code Window.
 
 

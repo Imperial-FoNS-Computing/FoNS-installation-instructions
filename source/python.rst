@@ -19,18 +19,16 @@ critical security updates. The instructions here are for the installation of
 Python 3. Don't try to use Python 2 for your work as it is unsupported and
 increasingly likely to have breakages which won't be fixed.
 
-Installing Python
------------------
+Installing Python in Windows
+----------------------------
 
-Windows
-~~~~~~~
 
 You can obtain Anaconda `using the Anaconda Windows installation site
 <https://docs.anaconda.com/anaconda/install/windows/>`__. Simply follow the
 instructions there to download and run the installer.
 
-MacOS
-~~~~~
+Installing Python on Mac
+------------------------
 
 Homebrew install Anaconda
 .........................
@@ -102,8 +100,8 @@ notebook, you would run:
     version which is really only intended for internal use by the operating system.
     You should install a fully-featured Python (i.e. Anaconda or Homebrew).
 
-Linux
-~~~~~
+Installing Python on Linux
+--------------------------
 
 Every Linux distribution distributes a fully-featured Python, and this might
 well be enough for your needs. However if you would prefer to have the same
