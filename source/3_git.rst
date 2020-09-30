@@ -1,3 +1,5 @@
+.. _git:
+
 Git and GitHub Classroom
 ========================
 
@@ -7,7 +9,7 @@ Git and GitHub Classroom
 Introduction
 ------------
 
-`Git <https://git-scm.com>`_ and `GitHub <https://github.com>`_ Classroom are
+`Git <https://git-scm.com>`__ and `GitHub <https://github.com>`__ Classroom are
 used in some modules to distribute programming coursework, enable you to manage
 your code while completing the exercises, and then to help with submission.
 
@@ -98,6 +100,8 @@ see below, this makes it really easy to obtain the exercise and work with it.
 
 Installing Git
 --------------
+
+.. _git-windows:
 
 Windows
 ~~~~~~~
