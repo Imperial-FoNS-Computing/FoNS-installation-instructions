@@ -11,8 +11,6 @@ but **RStudio is highly recommended**.
 Also note that in most of the cases below (excluding the approach using 
 Software Hub), R must be installed before trying to install RStudio.
 
-
-
 Installing R and RStudio on Windows
 -----------------------------------
 
