@@ -19,3 +19,4 @@ Linux computers.
    linux.rst
    terminal.rst
    homebrew.rst
+   jupyter.rst
