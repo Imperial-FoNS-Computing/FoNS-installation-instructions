@@ -22,7 +22,7 @@ As an existing Python 3 user, you may wish to install Jupyter using
 Python's package manager, ``pip``, instead of Anaconda. Do the
 following:
 
-.. code:: bash
+.. code:: console
 
    sudo pip3 install --upgrade pip
 
@@ -30,13 +30,13 @@ following:
 
 If pip3 is not available, then first:
 
-.. code:: bash
+.. code:: console
 
    sudo apt-get install python3-pip
 
 If you keep getting a ``pip2 command not found`` error:
 
-.. code:: bash
+.. code:: console
 
    sudo apt remove python3-pip && sudo apt install python3-pip
 
@@ -51,7 +51,7 @@ Python 2.7 on Ubuntu 16.04
 
 If this does not work for python 2.7 on Ubuntu 16.04, do this:
 
-.. code:: bash
+.. code:: console
 
    sudo apt-get update
 
@@ -68,7 +68,7 @@ If this does not work for python 2.7 on Ubuntu 16.04, do this:
 You will likely get an error like: "You are using pip version 8.1.1,
 however version 8.1.2 is available."
 
-.. code:: bash
+.. code:: console
 
 
    sudo -H pip install --upgrade pip
@@ -78,7 +78,7 @@ however version 8.1.2 is available."
 Mac
 ^^^
 
-.. code:: bash
+.. code:: console
 
    pip3 install --upgrade pip
 
@@ -137,18 +137,12 @@ now have both Python and R.
 Adding extensions to Jupyter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can add some useful additional functionalities to your Jupyter
-notebook interface using (the unofficial)
-`extensions <https://github.com/ipython-contrib/jupyter_contrib_nbextensions>`__.
-The list of extensions and further instructions for installation can be
-`found
-here <http://jupyter-contrib-nbextensions.readthedocs.io/en/latest/>`__.
-You will also probably want to install the `extensions
-"configurator" <https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator>`__.
-This package will add useful functionalities like :math:`\LaTeX`
-environments and TOCs.
-
-Resources
-~~~~~~~~~
-
--  Check out...
+You can add some useful additional functionalities to your Jupyter notebook
+interface using (the unofficial) `extensions
+<https://github.com/ipython-contrib/jupyter_contrib_nbextensions>`__. The list
+of extensions and further instructions for installation can be `found here
+<http://jupyter-contrib-nbextensions.readthedocs.io/en/latest/>`__. You will
+also probably want to install the `extensions "configurator"
+<https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator>`__. This
+package will add useful functionalities like :math:`\LaTeX` environments and
+TOCs.
