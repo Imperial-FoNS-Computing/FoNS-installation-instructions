@@ -33,8 +33,21 @@ MikTeX Windows Installation website <https://miktex.org/howto/install-miktex>`__
 Installing LaTeX on Mac
 -----------------------
 
-LaTeX is one of the few things which you can't install using Homebrew, so you'll
-have to download a package yourself. Head to the `MacTeX website
+Homebrew
+~~~~~~~~
+
+If you've :ref:`installed Homebrew
+<homebrew>` then you can install the MacTeX distribution of LaTeX by :ref:`opening a terminal
+<terminal-mac>` and running the following command:
+
+.. code-block:: console
+
+    $ brew cask install mactex
+
+Direct install
+~~~~~~~~~~~~~~
+
+Head to the `MacTeX website
 <http://www.tug.org/mactex/mactex-download.html>`__ and follow the instructions
 there.
 

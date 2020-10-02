@@ -135,7 +135,7 @@ the most recent release.
 
 If you want a more recent version and you've :ref:`installed Homebrew
 <homebrew>` then installing Git is as simple as :ref:`opening a terminal
-<macos_terminal>` and running the following command:
+<terminal-mac>` and running the following command:
 
 .. code-block:: console
 
