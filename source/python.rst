@@ -141,3 +141,249 @@ The `--user` option tells pip to just install for the current user. This is
 preferable to using `sudo` and to install packages globally, as it removes any
 risk of interfering with packages that the operating system needs.
 
+Python Virtual Environments
+---------------------------
+
+Before we move on to actually installing packages, we need to give a
+little thought to where the packages are to be installed. We could
+simply install packages into the Python installation on our
+computer. This can be a reasonable approach if all you want to do is
+run code from the default versions of public packages. However, it has
+a number of limitations. Basically, a Python installation is a single
+namespace for packages, so if two different projects you are
+working on need two different versions of the same package, you're out
+of luck. Similarly, if you are working on changes to a package, you
+probably don't want your half-finished experimental work to be the
+package that your other projects use.
+
+Python virtual environments, or venvs, are separate namespaces within
+a Python installation. They have their own Python command and
+collection of packages. Effectively they behave like their own
+separate Python installation, except that most of the core Python
+files are shared, so a venv takes rather little additional space.
+
+.. _create_venv:
+
+Creating a venv
+...............
+
+The most straightforward way to create a venv is on the terminal
+command line, not from within Python itself. This is accomplished
+using Python's :mod:`venv` package. For example, to create a venv
+called `my_venv`, you would type:
+
+.. code-block:: console
+
+   $ python3 -m venv my_venv
+
+Don't forget that the `$` stands for the command prompt: you don't
+type it. This command will create the folder `my_venv` and various
+subfolders containing things like the Python program itself and space
+for any packages which you install in the venv. If there was already a
+file or folder called `my_venv` in the current folder then you'll get
+an error, so make sure you choose a new name.
+
+A venv doesn't usually contain any particularly valuable data, so you
+should regard them as essentially disposable. In particular, if
+something goes wrong when creating a venv, just delete it and start
+again. In the bash or zsh shells you would type:
+
+.. code-block:: console
+
+   $ rm -rf my_venv
+
+.. warning::
+
+   `rm -rf` will delete its argument and all its subdirectories
+   without further prompts or warnings. There is no undo operation.
+   Be very careful about what you delete.
+
+.. _activate_venv:
+
+Using a venv
+............
+
+If you run Python from the terminal, then the simplest way to use the
+venv is to source its activate script. If using bash or zsh on Mac or
+Linux you would type:
+
+.. code-block:: console
+
+   $ source my_venv/bin/activate
+
+while using bash on Windows you would type:
+
+.. code-block:: console
+
+   $ source my_venv/Scripts/activate
+
+Obviously, you would use the folder name of your venv instead of
+`my_venv`. In either case, your command prompt will change to indicate
+that you are now using the venv. It might look something like:
+
+.. code-block:: console
+
+   (my_venv) $
+
+Any subsequent invocations of Python commands such as `python3` will
+now use the version from the venv, with access to whatever packages
+you have installed in that venv. If you are using a terminal shell
+other than bash or zsh, then see the :mod:`venv` package documentation
+for the correct activation command.
+
+.. hint::
+
+   Venv activation is just for one terminal session. You need to
+   activate the venv every time you open a new terminal.  If you find
+   that Python can't find your packages or tests, then the first thing
+   to check is whether you remembered to activate the venv.
+
+Installing packages in a venv
+.............................
+
+When the venv is active, the `pip3` that your terminal will find is the one from
+the venv, and any packages you install will be installed in the venv, not in the
+system Python installation. For example if you needed Numpy and Matplotlib, you
+would type the following in the :ref:`terminal <terminal>`:
+
+.. code-block:: console
+
+    (my_venv) $ pip3 install numpy matplotlib
+
+Recommended folder layout for a Python module
+---------------------------------------------
+
+In order to do the coursework for a typical module using Python, you'll want to
+have a venv for the module, so that packages and software you use in different
+modules don't interfere with each other, and you'll usually want to have one
+folder for each assignment that is set in the module. If the module is using
+:ref:`GitHub Classroom <github_classroom_exercise>` then each of these exercise folders
+will be a git repository.
+
+Suppose, then, that we are taking a module called Principles of Programming. We
+would use a folder structure like this::
+
+    principles_of_programming
+    ├── PoP_venv
+    ├── exercise_1
+    ├── exercise_2
+    ├── exercise_3
+    └── ...
+
+Let's see how we would set this up. First, :ref:`open a terminal <terminal>`.
+You can also do several of these steps graphically, but the precise steps are
+harder to explain, and are different on different operating systems.
+
+The terminal will usually open in your home folder. Maybe you want to put the module
+folder straight in your home folder, or maybe you want to put it somewhere else.
+This just comes down to how you organise the files on your computer. On my
+computer, I like to keep this sort of folder in a documents folder called `doc`.
+So I need to switch into that folder first with the `cd` (change directory)
+command:
+
+.. code-block:: console
+
+    $ cd doc
+
+Now we create the main module folder using `mkdir` (make directory):
+
+.. code-block:: console
+
+    $ mkdir principles_of_programming
+
+.. hint:: Avoid spaces in names
+
+    Even though spaces are usually allowed in file and folder names, many
+    software packages contain bugs which cause them to fail to handle spaces in
+    names correctly. It's therefore good practice not to have spaces in file or
+    folder names.
+
+Now we change into the folder we just created:
+
+.. code-block:: console
+
+    $ cd principles_of_programming
+
+.. hint:: Use tab completion
+
+    Most modern terminals (or, rather, the shell program inside) support tab
+    completion. This means that you can press the `tab` key to have the terminal
+    complete command and file names. In this example, rather that typing out
+    `principles_of_programming`, you can type `pr + tab` and, so long as this is
+    the only name in the current folder starting with `pr`, the shell will
+    insert the rest of the name. If there are more names starting with `pr` then
+    you may have to type more characters before tab completion will work. 
+
+    Tab completion is often preferable to typing because it's not only faster
+    but avoids typos.
+
+Next we :ref:`create the venv <create_venv>`. We could call it anything we like,
+but we would probably like a name which is short (because it's going to appear
+at the start of every line in the terminal), describes which venv this is, and
+says that it's a venv. In this case, the name `PoP_venv` will do nicely:
+
+.. code-block:: console
+
+    $ python3 -m venv PoP_venv
+
+When that completes, we'll need to :ref:`activate the venv`. On Windows we would
+type:
+
+.. code-block:: console
+
+    $ source PoP_venv/Scripts/activate
+
+While on Mac or Linux it would be:
+
+.. code-block:: console
+
+    $ source PoP_venv/bin/activate
+
+Next we'll install whichever Python packages we need for the module. Let's
+suppose we just need Jupyter:
+
+.. code-block:: console
+
+    (PoP_venv) $ pip3 install jupyter
+
+Finally, we'll need to create the folder for the first exercise on our module.
+If the module is not using GitHub Classroom then you'll just use `mkdir` to make a
+folder for each exercise. However for GitHub Classroom modules there will be a
+Git repository to clone for each exercise. As a demonstration, we can use this
+`example Git repository <https://github.com/imperiallearn/exercise_1>`__. Unlike
+most coursework repositories, this one is public so anyone can clone it.
+Assuming we've :ref:`installed Git <git-windows>`, we can type:
+
+.. code-block:: console
+
+    (PoP_venv) $ git clone https://github.com/imperiallearn/exercise_1.git
+
+If we now examine the contents of the current folder with `ls` (list) then we
+can see that we have the venv folder and the exercise folder as expected:
+
+.. code-block:: console
+
+    (PoP_venv) $ ls
+    exercise_1  PoP_venv
+
+The `exercise_1` repository contains a simple "Hello World" program written as
+both a Python file and a Jupyter notebook. For example we can run the file
+version thus:
+
+.. code-block:: console
+
+    (PoP_venv) $ python3 exercise_1/hello.py
+    Hello World!
+
+Or we can launch the Jupyter version:
+
+.. code-block:: console
+
+    (PoP_venv) $ cd exercise_1
+    (PoP_venv) $ jupyter notebook hello.ipynb
+
+This pops up a web browser showing:
+
+.. image:: _static/jupyter_hello.png
+
+
