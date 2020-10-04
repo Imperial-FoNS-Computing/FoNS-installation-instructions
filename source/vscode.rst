@@ -97,16 +97,16 @@ Adding Extensions
 
 There are a number of Visual Studio Code `extensions <https://marketplace.visualstudio.com/>`__ specific to certain programming languages, debuggers, and tools such as a Git repositoy controls support your code development. Please `see this webpage <https://code.visualstudio.com/docs/editor/extension-gallery>`__ and `this one <https://code.visualstudio.com/docs/introvideos/extend>`__ (also has a video tutorial) for more information and howto's. 
 
-In particular, we recommend the installaation of the following extensions:
+In particular, we recommend installation of the following extensions:
 
 * `Liveshare <https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack>`__ (Real-time collaborative coding)
-* `GitLens <https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens>`__ (Seamlessly use Git and control Git repositories within the IDE)
+* `GitLens <https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens>`__ (Add to the inbuilt Visual Studio Code Git capabilities to seamlessly use Git and control Git repositories within the IDE)
 * `Prettier <https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode>`__ (To impose consistency in code formattiong)
 * `Python language support <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`__
 * `R language support <https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r>`__
 * `Path Intellisense <https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense>`__ (Autocomplete directory paths and filenames)
 
-There are scores of other extensions that you might want to try out. 
+There are scores of other extensions that you might want to try out depending on the programming language or toolset you are using (e.g., `LaTeX Workshop <https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop>`__). 
 
 Sending text to terminal
 ~~~~~~~~~~~~~~~~~~~~~~~

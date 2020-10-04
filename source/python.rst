@@ -1,3 +1,5 @@
+.. _python:
+
 Python
 ======
 
@@ -24,6 +26,8 @@ Installing Python
 
 Windows
 ~~~~~~~
+
+Unlike most *nix Operating systems (including Mac and Linux), Windows does not include a functional system-wide installation of Python. You can download an installer for `your Windows version<https://docs.python.org/3/using/windows.html>`__. However, a better option is to `use Anaconda <https://docs.anaconda.com/anaconda/install/windows/>`__, which allows you to easily add more Python functionality (such as numpy, scipy and pandas modules) and the `conda` package manager to install addtional packages.
 
 MacOS
 ~~~~~
@@ -101,7 +105,7 @@ notebook, you would run:
 Linux
 ~~~~~
 
-Every Linux distribution distributes a fully-featured Python, and this might
+Every Linux distribution includes a fully-featured Python, and this might
 well be enough for your needs. However if you would prefer to have the same
 Python distribution as most of your classmates, then there are instructions for
 installing Anaconda on `the Anaconda Linux install website <https://docs.anaconda.com/anaconda/install/linux/>`_.
@@ -109,17 +113,19 @@ installing Anaconda on `the Anaconda Linux install website <https://docs.anacond
 Installing Python packages on Linux
 ...................................
 
-If you're using the system Python, as opposed to Anaconda, then you'll use the
-Python package manager `pip` to install any additional packages that you need.
-There are a couple of issues with this of which you should be aware. First, not
-all Linux distributions install `pip` by default, often you need to install an
-additional package called something like `python-pip`. For example, on Ubuntu
-you would run:
+If you're using the system-installed Python, as opposed to Anaconda, then you
+should use the Python package manager `pip` to install any additional packages
+that you need. There are a couple of issues with this of which you should be
+aware. First, not all Linux distributions install `pip` by default, often you
+need to install an additional package called something like `python-pip`. For
+example, on Ubuntu you would run:
 
 .. code-block:: console
 
-    $ sudo apt-get install python-pip
+    $ sudo apt-get install python3-pip
 
+If you already have python 2.x and then installed python3, your pip will by default be pointing to python3's pip. you can verify that by typing `pip --version` which would be the same as `pip3 --version`.
+  
 While on Fedora and related distributions, you would run:
 
 .. code-block:: console
