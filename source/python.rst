@@ -1,3 +1,5 @@
+.. _python:
+
 Python
 ======
 
@@ -103,7 +105,7 @@ notebook, you would run:
 Installing Python on Linux
 --------------------------
 
-Every Linux distribution distributes a fully-featured Python, and this might
+Every Linux distribution includes a fully-featured Python, and this might
 well be enough for your needs. However if you would prefer to have the same
 Python distribution as most of your classmates, then there are instructions for
 installing Anaconda on `the Anaconda Linux install website <https://docs.anaconda.com/anaconda/install/linux/>`_.
@@ -111,17 +113,19 @@ installing Anaconda on `the Anaconda Linux install website <https://docs.anacond
 Installing Python packages on Linux
 ...................................
 
-If you're using the system Python, as opposed to Anaconda, then you'll use the
-Python package manager `pip` to install any additional packages that you need.
-There are a couple of issues with this of which you should be aware. First, not
-all Linux distributions install `pip` by default, often you need to install an
-additional package called something like `python-pip`. For example, on Ubuntu
-you would run:
+If you're using the system-installed Python, as opposed to Anaconda, then you
+should use the Python package manager `pip` to install any additional packages
+that you need. There are a couple of issues with this of which you should be
+aware. First, not all Linux distributions install `pip` by default, often you
+need to install an additional package called something like `python-pip`. For
+example, on Ubuntu you would run:
 
 .. code-block:: console
 
-    $ sudo apt-get install python-pip
+    $ sudo apt-get install python3-pip
 
+If you already have python 2.x and then installed python3, your pip will by default be pointing to python3's pip. you can verify that by typing `pip --version` which would be the same as `pip3 --version`.
+  
 While on Fedora and related distributions, you would run:
 
 .. code-block:: console
@@ -249,6 +253,8 @@ would type the following in the :ref:`terminal <terminal>`:
 .. code-block:: console
 
     (my_venv) $ pip3 install numpy matplotlib
+
+.. _python_folders:
 
 Recommended folder layout for a Python module
 ---------------------------------------------
@@ -386,4 +392,67 @@ This pops up a web browser showing:
 
 .. image:: _static/jupyter_hello.png
 
+Using Visual Studio Code with Python
+------------------------------------
 
+Visual Studio Code provides excellent support for editing and debugging Python,
+both plain Python files and Jupyter Notebooks. Visual Studio Code also supports
+Python virtual environments, and revision control in Git.
+
+Opening your Python project as a workspace
+..........................................
+
+We'll assume here that you've set up your Python folder structure :ref:`as we
+recommended above <python_folders>`. One of the reasons for choosing that folder
+structure is that it works well with Visual Studio Code. Having :ref:`installed
+Visual Studio Code`, and launched it, you should see a screen like this:
+
+.. image:: _static/vscode_welcome.png
+
+Click on `Open folder...` and select the module folder from the dialog (in the
+case above, the folder `principles_of_programming)`. You should see a screen
+somewhat like this:
+
+.. image:: _static/vscode_principles.png
+
+Running a Python file
+.....................
+
+Click on the little arrow `>` next to `exercise_1` and then click 
+`hello.py` to open it. If this is the first time you've opened a Python file in
+Visual Studio code, it may prompt you to install the Python extension, and you
+should agree. It might also prompt you to install a Python linter, which is a
+program which checks your code against the Python style rules. You should agree
+to that too. The result should look something like the following:
+
+.. image:: _static/vscode_hello_py.png
+
+There are two important things to note here. The first is the text at the bottom
+`Python 3.8.5 64-bit ('PoP_venv':venv)`. This shows us which Python installation
+Visual Studio Code is using, and in particular that it's found our `PoP_venv`
+virtual environment. Visual Studio will automatically find a virtual environment
+that is in the folder you open, which is one of the reasons for our folder
+layout. The other important feature is the green triangle at the top right.
+Clicking on this will open a terminal and run this code:
+
+.. image:: _static/vscode_hello_py_output.png
+
+Looking at the bottom left, we can see that Visual Studio Code has opened a
+terminal, activated the virtual environment, and then run Python on our file
+`hello.py`. The result is the text `Hello World!` printed out. 
+
+Opening a Jupyter notebook
+..........................
+
+If we instead click on `hello.ipynb` then this Jupyter notebook will open. You
+might be asked whether to trust the notebook, and you should agree. The result
+will be something like this:
+
+.. image:: _static/vscode_hello_ipynb.png
+
+If you're used to Jupyter notebooks opening in your web browser, then this may
+look a bit strange, but it's actually just the same interface, albeit in
+slightly unfamiliar colours. Clicking on the green triangle, or clicking in the
+code box and pressing `shift + enter` will run the code:
+
+.. image:: _static/vscode_hello_ipynb_output.png

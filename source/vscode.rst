@@ -3,6 +3,7 @@
 Visual Studio Code
 ==================
 
+
 Visual Studio Code, which used to be called VS Code, is an open source Integrated
 Development Environment (IDE) produced by Microsoft. An IDE is a bundle of
 functionality for programming which includes a very capable text editor along
@@ -76,5 +77,49 @@ Installing Visual Studio Code on Linux
 
 Microsoft provide Visual Studio Code packages for a number of Linux
 distributions. See the `Visual Studio Code Linux installation webpage
-https://code.visualstudio.com/docs/setup/linux`_.
+<https://code.visualstudio.com/docs/setup/linux>`__.
 
+In particular, for Debian and Ubuntu based distributions, the easiest way to install Visual Studio Code is to download and install the ``.deb`` package (64-bit) from `here <https://code.visualstudio.com/Download>`__, and then through the command line in terminal with:
+
+.. code-block:: console
+
+    $ sudo dpkg -i <file>.deb
+
+Installing the ``.deb`` package will automatically install the apt repository and signing key to enable auto-updating of the software using the system's package manager. 
+
+Customizing Visual Studio Code
+------------------------------
+
+Adding Extensions
+.................
+
+There are a number of Visual Studio Code `extensions <https://marketplace.visualstudio.com/>`__ specific to certain programming languages, debuggers, and tools such as a Git repositoy controls support your code development. Please `see this webpage <https://code.visualstudio.com/docs/editor/extension-gallery>`__ and `this one <https://code.visualstudio.com/docs/introvideos/extend>`__ (also has a video tutorial) for more information and howto's. 
+
+In particular, you may be interested in the following extensions:
+
+* `Liveshare <https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack>`__ (Real-time collaborative coding)
+* `GitLens <https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens>`__ (Add to the inbuilt Visual Studio Code Git capabilities to seamlessly use Git and control Git repositories within the IDE)
+* `Prettier <https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode>`__ (To impose consistency in code formatting)
+* `Python language support <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`__
+* `R language support <https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r>`__
+* `Path Intellisense <https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense>`__ (Autocomplete directory paths and filenames)
+
+There are scores of other extensions that you might want to try out depending on the programming language or toolset you are using (e.g., `LaTeX Workshop <https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop>`__). 
+
+Sending text to terminal
+........................
+
+ Most code editors will disable sending text to an (usually, embedded) terminal for security reasons. To enable this behaviour in Visual Studio Code, do the following (its slightly tricky!):
+
+* Enter `ctrl+shift+P` in vscode. This will bring up the command "palette" box at the top of the editor.
+* There, search for "keyboard", which will bring up a few options. from the list, open `Preferences:Open Keyboard Shortcuts File` (both are `json <https://en.wikipedia.org/wiki/JSON>`__ files). 
+* Place your key bindings in this file to overwrite the defaults (as it says at the top!). Then, add the following to the json file:   
+
+.. code-block:: JSON
+
+    {
+      "key": "ctrl+enter",
+      "command": "workbench.action.terminal.runSelectedText"
+    }
+
+Note that this is a `json` file format; so, each keybinding is in a separate pair of `{ }`'s, each keybinding specification then separated by commas.
