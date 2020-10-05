@@ -79,8 +79,6 @@ Microsoft provide Visual Studio Code packages for a number of Linux
 distributions. See the `Visual Studio Code Linux installation webpage
 <https://code.visualstudio.com/docs/setup/linux>`__.
 
-<<<<<<< HEAD
-=======
 In particular, for Debian and Ubuntu based distributions, the easiest way to install Visual Studio Code is to download and install the ``.deb`` package (64-bit) from `here <https://code.visualstudio.com/Download>`__, and then through the command line in terminal with:
 
 .. code-block:: console
@@ -93,11 +91,11 @@ Customizing Visual Studio Code
 ------------------------------
 
 Adding Extensions
-~~~~~~~~~~~~~~~~~
+.................
 
 There are a number of Visual Studio Code `extensions <https://marketplace.visualstudio.com/>`__ specific to certain programming languages, debuggers, and tools such as a Git repositoy controls support your code development. Please `see this webpage <https://code.visualstudio.com/docs/editor/extension-gallery>`__ and `this one <https://code.visualstudio.com/docs/introvideos/extend>`__ (also has a video tutorial) for more information and howto's. 
 
-In particular, we recommend installation of the following extensions:
+In particular, you may be interested in the following extensions:
 
 * `Liveshare <https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack>`__ (Real-time collaborative coding)
 * `GitLens <https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens>`__ (Add to the inbuilt Visual Studio Code Git capabilities to seamlessly use Git and control Git repositories within the IDE)
@@ -109,7 +107,7 @@ In particular, we recommend installation of the following extensions:
 There are scores of other extensions that you might want to try out depending on the programming language or toolset you are using (e.g., `LaTeX Workshop <https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop>`__). 
 
 Sending text to terminal
-~~~~~~~~~~~~~~~~~~~~~~~
+........................
 
  Most code editors will disable sending text to an (usually, embedded) terminal for security reasons. To enable this behavior in Visual Studio Code, do the following (its slightly tricky!):
 
@@ -125,4 +123,3 @@ Sending text to terminal
     }
 
 Note that this is a `json` file format; so, each keybinding is in a separate pair of `{ }`'s, each kebinding specification then separated by commas.
->>>>>>> origin/DoLS_Pawar
