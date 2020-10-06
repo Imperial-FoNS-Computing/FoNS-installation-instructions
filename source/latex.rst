@@ -64,7 +64,7 @@ in the :ref:`terminal <terminal>`.
 
 .. code-block:: console
 
-    $ sudo apt-install texlive-latex-extra
+    $ sudo apt install texlive-latex-extra
 
 For Fedora, you would run:
 
