@@ -4,7 +4,7 @@ SSH
 SSH, the Secure SHell is a program which enables you to connect to another
 computer to run commands in a :ref:`terminal <terminal>`. Other programs can
 also run over the SSH connection, so SSH can also be used for tasks like copying files between
-computers or to enable :ref:`Visual Studio Code` to open files located on a
+computers or to enable :ref:`Visual Studio Code <visual-studio-code>` to open files located on a
 different computer. 
 
 
@@ -34,6 +34,6 @@ SSH is usually installed on Linux machines by default. In the unlikely event
 that it's not installed, it will be available using your distribution's package
 manager. For example on Ubuntu and related distributions, you would type:
 
-.. code-block:: terminal
+.. code-block:: console
 
     $ sudo apt install ssh-client

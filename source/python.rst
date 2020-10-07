@@ -332,7 +332,7 @@ says that it's a venv. In this case, the name `PoP_venv` will do nicely:
 
     $ python3 -m venv PoP_venv
 
-When that completes, we'll need to :ref:`activate the venv`. On Windows we would
+When that completes, we'll need to :ref:`activate the venv <activate_venv>`. On Windows we would
 type:
 
 .. code-block:: console
@@ -405,7 +405,7 @@ Opening your Python project as a workspace
 We'll assume here that you've set up your Python folder structure :ref:`as we
 recommended above <python_folders>`. One of the reasons for choosing that folder
 structure is that it works well with Visual Studio Code. Having :ref:`installed
-Visual Studio Code`, and launched it, you should see a screen like this:
+Visual Studio Code <visual-studio-code>`, and launched it, you should see a screen like this:
 
 .. image:: _static/vscode_welcome.png
 

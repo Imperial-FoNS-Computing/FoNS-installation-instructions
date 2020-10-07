@@ -72,7 +72,7 @@ do any of the following?
 2. Work on more than one computer.
 3. Still have your repository if your computer is lost or your hard disk dies.
 
-`GitHub <https://GitHub.com>`_ is a cloud service which stores copies of Git
+`GitHub <https://GitHub.com>`__ is a cloud service which stores copies of Git
 repositories online. You can `push` your changes up to GitHub from any computer
 with an internet connection and `pull` those changes down to any other computer.
 GitHub also integrates with other software development tools such as automatic
@@ -344,7 +344,7 @@ assignment created just for this exercise. `Accept the assignment by clicking
 here <https://classroom.github.com/a/cChf4oeV>`_.
 
 When you click on the assignment, if you're not already logged into your `GitHub
-<https://GitHub.com>`_ account then you will be prompted to do so. If this is
+<https://GitHub.com>`__ account then you will be prompted to do so. If this is
 your first GitHub Classroom assignment, you'll also be asked to give GitHub
 Classroom permission to access your GitHub account. You should do so.
 
@@ -376,7 +376,7 @@ we'll need to clone the repository to our computer.
 Cloning the repository
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Your new repository currently exists only on `GitHub <https://github.com>`_, but
+Your new repository currently exists only on `GitHub <https://github.com>`__, but
 you need a local copy on your machine (or on a remote machine that you're logged
 into) in order to work on it. This is called cloning the repository. Here
 we show how to do this using commands in the terminal, because this approach is 

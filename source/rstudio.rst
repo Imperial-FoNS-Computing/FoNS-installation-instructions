@@ -28,7 +28,6 @@ Direct install
 ~~~~~~~~~~~~~~
 
 The current version of R can be obtained from the `Comprehensive R Archive
-
 Network Windows download page <https://cran.rstudio.com/bin/windows/base/>`__. The click
 on the latest release link (it will be called something like `Download R 4.0.2 for Windows`, but
 the version may be newer than that). Run the installer and accept all of the

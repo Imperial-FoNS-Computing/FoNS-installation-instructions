@@ -44,7 +44,7 @@ HomeBrew
 ........
 
 If you have :ref:`installed homebrew <homebrew>` then you can install Visual
-Studio Code by :ref:`opening a terminal` and running this command:
+Studio Code by :ref:`opening a terminal <terminal-mac>` and running this command:
 
 .. code-block:: console
 
