@@ -19,4 +19,4 @@ jobs:
         python -m pip install sphinx sphinx-autobuild
     - name: Checking that Sphinx builds cleanly.
       run: |
-        make html SPHINXOPTS="-W --keep-going -n"
+        sphinx-build -b html -d build/doctrees -W --keep-going -n source build/html
