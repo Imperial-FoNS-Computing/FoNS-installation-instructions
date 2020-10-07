@@ -1,9 +1,11 @@
 .. linux:
 
 Installing Linux  
-==========
+================
 
-We recommend Ubuntu as the go to Linux "flavour" for students and staff as there is some level of ICT support for it. Advanced users are free to use their own flavor such as Fedora, Mint, etc. 
+We recommend Ubuntu as the go to Linux distribution for students and staff as
+there is some level of ICT support for it. Advanced users are free to use their
+own distribution such as Fedora, Mint, etc. 
 
 Installing Ubuntu
 -----------------
@@ -70,7 +72,7 @@ So the take-home message is, don't bother wasting time with a MacOS - Linux dual
 
 
 Creating partitions during Linux installation
-~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When you install Ubuntu, you will have the opportunity to create separate
 ``swap``, ``root`` and ``home`` partitions on your hard disk. ``swap``
@@ -146,7 +148,7 @@ past and then press the up key, it will autocomplete by
 reverse-searching history (open a new terminal and try it!).
 
 Resources
-----
+---------
 
 -  `Ubuntu tutorials <https://tutorials.ubuntu.com/>`__
 -  `Bootable USB

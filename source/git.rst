@@ -72,7 +72,7 @@ do any of the following?
 2. Work on more than one computer.
 3. Still have your repository if your computer is lost or your hard disk dies.
 
-`GitHub <https://GitHub.com>`_ is a cloud service which stores copies of Git
+`GitHub <https://GitHub.com>`__ is a cloud service which stores copies of Git
 repositories online. You can `push` your changes up to GitHub from any computer
 with an internet connection and `pull` those changes down to any other computer.
 GitHub also integrates with other software development tools such as automatic
@@ -344,7 +344,7 @@ assignment created just for this exercise. `Accept the assignment by clicking
 here <https://classroom.github.com/a/cChf4oeV>`_.
 
 When you click on the assignment, if you're not already logged into your `GitHub
-<https://GitHub.com>`_ account then you will be prompted to do so. If this is
+<https://GitHub.com>`__ account then you will be prompted to do so. If this is
 your first GitHub Classroom assignment, you'll also be asked to give GitHub
 Classroom permission to access your GitHub account. You should do so.
 
@@ -376,7 +376,7 @@ we'll need to clone the repository to our computer.
 Cloning the repository
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Your new repository currently exists only on `GitHub <https://github.com>`_, but
+Your new repository currently exists only on `GitHub <https://github.com>`__, but
 you need a local copy on your machine (or on a remote machine that you're logged
 into) in order to work on it. This is called cloning the repository. Here
 we show how to do this using commands in the terminal, because this approach is 
@@ -389,13 +389,13 @@ webpage, click on the large green `Code` button on the right:
 .. image:: _static/git_clone.*
 
 Click on the little picture of a clipboard to copy the URL. Now, back in your
-terminal type (without pressing `enter`):
+terminal type (without pressing :kbd:`enter`):
 
 .. code-block:: console
 
     $ git clone
 
-Paste the URL you copied into the terminal after `clone` and then press `enter`.
+Paste the URL you copied into the terminal after `clone` and then press :kbd:`enter`.
 If you are asked for your GitHub username and password, enter them, and the
 repository will download. The process should look a little like this:
 
@@ -464,14 +464,14 @@ that!)
 Once you've edited the line, you need to save the file and quit nano. Helpfully,
 nano shows a lot of its options along the bottom of the screen. We just need to
 know that the caret symbol (`^`) stands for the `control` key. So we press
-`control + O` to write out (save) our changes (Note for Mac users, this really
-does mean the `control` key, and not ⌘). Nano will offer us the option of
-changing the filename, but we don't want to do that so we just press `enter` to
+:kbd:`control` + :kbd:`O` to write out (save) our changes (Note for Mac users, this really
+does mean the :kbd:`control` key, and not :kbd:`⌘`). Nano will offer us the option of
+changing the filename, but we don't want to do that so we just press :kbd:`enter` to
 save to the same file:
 
 .. image:: _static/nano-write-out.png
 
-Next we quit nano by typing `control + X`.
+Next we quit nano by typing :kbd:`control` + :kbd:`X`.
 
 Committing our changes
 ~~~~~~~~~~~~~~~~~~~~~~

@@ -313,10 +313,18 @@ p.admonition-title:after {
     content: ":";
 }
 
-pre, code {
+pre, code, .command {
     font-family: Consolas, "andale mono", "lucida console", monospace;
-    background-color: #dadada;
+    background-color: #eaeaea;
  }
+
+kbd {
+    background-color: #eaeaea;
+    border-radius: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
 
 .highlight pre {
     font-size: 14px;

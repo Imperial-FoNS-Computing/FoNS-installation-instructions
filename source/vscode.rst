@@ -44,7 +44,7 @@ HomeBrew
 ........
 
 If you have :ref:`installed homebrew <homebrew>` then you can install Visual
-Studio Code by :ref:`opening a terminal` and running this command:
+Studio Code by :ref:`opening a terminal <terminal-mac>` and running this command:
 
 .. code-block:: console
 
@@ -63,8 +63,8 @@ Direct download
 
 Follow the `official MacOS Visual Studio Code download link
 <https://code.visualstudio.com/docs?dv=osx>`_. Rather than an installer, this
-directly downloads the program itself. Open up the Finder (press `⌘ + space` and
-type `finder` then press `enter` (⏎)) and copy Visual Studio Code from the
+directly downloads the program itself. Open up the Finder (press :kbd:`⌘` + :kbd:`space` and
+type `finder` then press :kbd:`enter` (:kbd:`⏎`)) and copy Visual Studio Code from the
 Downloads folder to the Applications folder.
 
 If you want to be able to start Visual Studio Code from the :ref:`terminal`,
@@ -72,7 +72,7 @@ then you'll need to do a little more setup from inside the program itself,
 following the instructions `on the Microsoft Visual Studio Code website
 <https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line>`__.
 
-Installing Visual Studio Code on Linux 
+Installing Visual Studio Code on Linux
 --------------------------------------
 
 Microsoft provide Visual Studio Code packages for a number of Linux
@@ -111,7 +111,7 @@ Sending text to terminal
 
  Most code editors will disable sending text to an (usually, embedded) terminal for security reasons. To enable this behaviour in Visual Studio Code, do the following (its slightly tricky!):
 
-* Enter `ctrl+shift+P` in vscode. This will bring up the command "palette" box at the top of the editor.
+* Press :kbd:`control` + :kbd:`shift` + `P` in vscode. This will bring up the command "palette" box at the top of the editor.
 * There, search for "keyboard", which will bring up a few options. from the list, open `Preferences:Open Keyboard Shortcuts File` (both are `json <https://en.wikipedia.org/wiki/JSON>`__ files). 
 * Place your key bindings in this file to overwrite the defaults (as it says at the top!). Then, add the following to the json file:   
 
