@@ -77,7 +77,7 @@ installer and accept the default options.
 Running RStudio
 ~~~~~~~~~~~~~~~
 
-You launch RStudio by pressing `⌘ + space` to open Spotlight search and
+You launch RStudio by pressing :kbd:`⌘` + :kbd:`space` to open Spotlight search and
 type `rstudio` in the resulting search box:
 
 .. image:: _static/spotlight-rstudio.png

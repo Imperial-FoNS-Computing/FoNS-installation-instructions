@@ -313,9 +313,9 @@ Now we change into the folder we just created:
 .. hint:: Use tab completion
 
     Most modern terminals (or, rather, the shell program inside) support tab
-    completion. This means that you can press the `tab` key to have the terminal
+    completion. This means that you can press the :kbd:`tab` key to have the terminal
     complete command and file names. In this example, rather that typing out
-    `principles_of_programming`, you can type `pr + tab` and, so long as this is
+    `principles_of_programming`, you can type `pr` + :kbd:`tab` and, so long as this is
     the only name in the current folder starting with `pr`, the shell will
     insert the rest of the name. If there are more names starting with `pr` then
     you may have to type more characters before tab completion will work. 
@@ -453,6 +453,6 @@ will be something like this:
 If you're used to Jupyter notebooks opening in your web browser, then this may
 look a bit strange, but it's actually just the same interface, albeit in
 slightly unfamiliar colours. Clicking on the green triangle, or clicking in the
-code box and pressing `shift + enter` will run the code:
+code box and pressing :kbd:`shift` + :kbd:`enter` will run the code:
 
 .. image:: _static/vscode_hello_ipynb_output.png

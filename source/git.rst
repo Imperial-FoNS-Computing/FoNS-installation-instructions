@@ -389,13 +389,13 @@ webpage, click on the large green `Code` button on the right:
 .. image:: _static/git_clone.*
 
 Click on the little picture of a clipboard to copy the URL. Now, back in your
-terminal type (without pressing `enter`):
+terminal type (without pressing :kbd:`enter`):
 
 .. code-block:: console
 
     $ git clone
 
-Paste the URL you copied into the terminal after `clone` and then press `enter`.
+Paste the URL you copied into the terminal after `clone` and then press :kbd:`enter`.
 If you are asked for your GitHub username and password, enter them, and the
 repository will download. The process should look a little like this:
 
@@ -464,14 +464,14 @@ that!)
 Once you've edited the line, you need to save the file and quit nano. Helpfully,
 nano shows a lot of its options along the bottom of the screen. We just need to
 know that the caret symbol (`^`) stands for the `control` key. So we press
-`control + O` to write out (save) our changes (Note for Mac users, this really
-does mean the `control` key, and not ⌘). Nano will offer us the option of
-changing the filename, but we don't want to do that so we just press `enter` to
+:kbd:`control` + :kbd:`O` to write out (save) our changes (Note for Mac users, this really
+does mean the :kbd:`control` key, and not :kbd:`⌘`). Nano will offer us the option of
+changing the filename, but we don't want to do that so we just press :kbd:`enter` to
 save to the same file:
 
 .. image:: _static/nano-write-out.png
 
-Next we quit nano by typing `control + X`.
+Next we quit nano by typing :kbd:`control` + :kbd:`X`.
 
 Committing our changes
 ~~~~~~~~~~~~~~~~~~~~~~
