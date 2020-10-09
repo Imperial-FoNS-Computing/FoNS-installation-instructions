@@ -124,6 +124,45 @@ Sending text to terminal
 
 Note that this is a `json` file format; so, each keybinding is in a separate pair of `{ }`'s, each keybinding specification then separated by commas.
 
+Live Share
+----------
+
+One of the key advantages of Visual Studio Code is its Live Share extension.
+Live Share enables two or more programmers to each run Visual Studio Code on
+their own computers but to see and edit the same files in real time, and to see
+each other's cursors as they edit. Live Share can make collaboration much
+easier, and it also facilitates remote computer lab sessions: the remote
+equivalent of having an instructor look over your shoulder at the screen is to
+Live Share your session with them. Live Share takes a lot less bandwidth than
+sharing your screen and because each participant uses their own IDE, they can
+independently set factors such as the font size to settings that are legible for
+them. There is also a Live Share Audio extension that enables you to talk with
+your collaborators, though you can also use a simultaneous call on another
+platform such as MS Teams or Zoom.
+
+Installing the Live Share extension
+...................................
+
+Click on the extensions icon, |extension|, in the left hand bar in Visual Studio
+Code. In the search box which appears, type `Live Share` then :kbd:`enter`.
+Click on the `install` button under the `Live Share` extension. Once the
+extension is installed, you should see |liveshare| at the bottom of your Visual
+Studio Code screen.
+
+Starting a Live Share
+.....................
+
+Using Live Share requires that you log in using either a Microsoft or a GitHub
+account. If you have neither, then :ref:`follow these instructions to sign up to
+GitHub <github_signup>`. Next click on |liveshare| and sign in when prompted. 
+
+
+.. |extension| image:: _static/vscode_extension.*
+    :height: 2ex
+
+.. |liveshare| image:: _static/vscode_liveshare.*
+    :height: 2ex
+
 .. rubric:: Footnotes
 
 .. [#Chrome] To use these installation instructions for Chrome OS you first need to :ref:`set up Linux on your Chromebook <linux-chrome>`.
