@@ -24,7 +24,6 @@ increasingly likely to have breakages which won't be fixed.
 Installing Python in Windows
 ----------------------------
 
-
 You can obtain Anaconda `using the Anaconda Windows installation site
 <https://docs.anaconda.com/anaconda/install/windows/>`__. Simply follow the
 instructions there to download and run the installer.
@@ -102,8 +101,8 @@ notebook, you would run:
     version which is really only intended for internal use by the operating system.
     You should install a fully-featured Python (i.e. Anaconda or Homebrew).
 
-Installing Python on Linux
---------------------------
+Installing Python on Linux or Chrome OS [#Chrome]_
+--------------------------------------------------
 
 Every Linux distribution includes a fully-featured Python, and this might
 well be enough for your needs. However if you would prefer to have the same
@@ -456,3 +455,7 @@ slightly unfamiliar colours. Clicking on the green triangle, or clicking in the
 code box and pressing :kbd:`shift` + :kbd:`enter` will run the code:
 
 .. image:: _static/vscode_hello_ipynb_output.png
+
+.. rubric:: Footnotes
+
+.. [#Chrome] To use these installation instructions for Chrome OS you first need to :ref:`set up Linux on your Chromebook <linux-chrome>`.

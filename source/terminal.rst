@@ -60,6 +60,13 @@ If you're not sure how to launch a terminal, then here are a few ways to find it
        appear in the menu, or you can start typing `terminal` in the text box that
        appears.
 
+Chrome OS
+---------
+
+If you have :ref:`set up Linux on your Chromebook <linux-chrome>` then you can
+open a terminal by pressing :kbd:`search` (:kbd:`🔍` or :kbd:`⊙`) and type
+`Terminal` then :kbd:`enter`.
+
 Opening a terminal within Visual Studio Code
 --------------------------------------------
 
