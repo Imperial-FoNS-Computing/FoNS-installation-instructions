@@ -148,7 +148,7 @@ for whatever reason, then there are more options on `the Git MacOS download
 website <https://git-scm.com/download/mac>`_.
 
 Installing Git on Linux or Chrome OS [#Chrome]_
-----------------------------------------------
+-----------------------------------------------
 
 Every Linux distribution ships Git through its package manager. The easiest way
 to install Git is usually to simply do whatever it is that is normal on your
