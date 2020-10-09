@@ -93,7 +93,7 @@ notebook, you would run:
 
 .. code-block:: console
 
-    $ pip3 install numpy matplotlib jupyter
+    $ python3 -m pip install numpy matplotlib jupyter
 
 .. warning::
 
@@ -123,7 +123,9 @@ example, on Ubuntu you would run:
 
     $ sudo apt-get install python3-pip
 
-If you already have python 2.x and then installed python3, your pip will by default be pointing to python3's pip. you can verify that by typing `pip --version` which would be the same as `pip3 --version`.
+In some cases, it can become confusing which version of Python a particular
+`pip` installation belongs to. This can be avoided by always invoking pip using
+`python3 -m pip` rather than just typing `pip` or `pip3`.
   
 While on Fedora and related distributions, you would run:
 
@@ -138,7 +140,7 @@ would type:
 
 .. code-block:: console
 
-    $ pip3 install --user jupyter
+    $ python3 -m pip install --user jupyter
 
 The `--user` option tells pip to just install for the current user. This is
 preferable to using `sudo` and to install packages globally, as it removes any
@@ -212,13 +214,19 @@ Linux you would type:
 
 .. code-block:: console
 
-   $ source my_venv/bin/activate
+    $ source my_venv/bin/activate
 
 while using bash on Windows you would type:
 
 .. code-block:: console
 
-   $ source my_venv/Scripts/activate
+    $ source my_venv/Scripts/activate
+
+If using PowerShell on Windows then you type:
+
+.. code-block:: console
+
+    > .\my_venv\Scripts\activate.ps1
 
 Obviously, you would use the folder name of your venv instead of
 `my_venv`. In either case, your command prompt will change to indicate
@@ -244,14 +252,14 @@ for the correct activation command.
 Installing packages in a venv
 .............................
 
-When the venv is active, the `pip3` that your terminal will find is the one from
-the venv, and any packages you install will be installed in the venv, not in the
-system Python installation. For example if you needed Numpy and Matplotlib, you
-would type the following in the :ref:`terminal <terminal>`:
+When the venv is active, the pip installing packages will use the pip from the
+venv, and the packages will be installed in the venv and not globally. For
+example if you needed Numpy and Matplotlib, you would type the following in the
+:ref:`terminal <terminal>`:
 
 .. code-block:: console
 
-    (my_venv) $ pip3 install numpy matplotlib
+    (my_venv) $ python3 -m pip install numpy matplotlib
 
 .. _python_folders:
 
@@ -349,7 +357,7 @@ suppose we just need Jupyter:
 
 .. code-block:: console
 
-    (PoP_venv) $ pip3 install jupyter
+    (PoP_venv) $ python3 -m pip install jupyter
 
 Finally, we'll need to create the folder for the first exercise on our module.
 If the module is not using GitHub Classroom then you'll just use `mkdir` to make a
