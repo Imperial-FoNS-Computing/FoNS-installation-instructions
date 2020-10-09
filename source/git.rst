@@ -147,8 +147,8 @@ If you need a more recent version of Git and you don't want to install Homebrew
 for whatever reason, then there are more options on `the Git MacOS download
 website <https://git-scm.com/download/mac>`_.
 
-Installing Git on Linux
------------------------
+Installing Git on Linux or Chrome OS [#Chrome]_
+-----------------------------------------------
 
 Every Linux distribution ships Git through its package manager. The easiest way
 to install Git is usually to simply do whatever it is that is normal on your
@@ -714,4 +714,6 @@ example. The precise form of the tests and the feedback they will provide will
 vary from module to module, and will depend in particular on which programming
 language is being used.
 
+.. rubric:: Footnotes
 
+.. [#Chrome] To use these installation instructions for Chrome OS you first need to :ref:`set up Linux on your Chromebook <linux-chrome>`.

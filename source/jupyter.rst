@@ -45,8 +45,8 @@ Mac
 Your best option is to download and :ref:`install Anaconda <python>`, which
 includes Python and Jupyter Notebook (among other useful pckages and utilities).
 
-Ubuntu / Linux
-~~~~~~~~~~~~~~
+Linux or Chrome OS [#Chrome]_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you are an an existing Python 3 user, instead of Anaconda, you may wish to install Jupyter using the Python package manager `pip` , with:
 
@@ -109,3 +109,7 @@ also probably want to install the `extensions "configurator"
 <https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator>`__. This
 package will add useful functionalities like :math:`\LaTeX` environments and
 TOCs.
+
+.. rubric:: Footnotes
+
+.. [#Chrome] To use these installation instructions for Chrome OS you first need to :ref:`set up Linux on your Chromebook <linux-chrome>`.

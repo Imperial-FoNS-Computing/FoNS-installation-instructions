@@ -82,8 +82,8 @@ type `rstudio` in the resulting search box:
 
 .. image:: _static/spotlight-rstudio.png
 
-Installing R and RStudio on Linux
----------------------------------
+Installing R and RStudio on Linux or Chrome OS [#Chrome]_
+---------------------------------------------------------
 
 It's likely that your Linux distribution ships a suitable version of R. For
 example on Ubuntu you would run:
@@ -116,3 +116,6 @@ containing the downloaded `.deb`:
 
 Obviously you replace `<deb_file>` with the name of the `.deb` file.
 
+.. rubric:: Footnotes
+
+.. [#Chrome] To use these installation instructions for Chrome OS you first need to :ref:`set up Linux on your Chromebook <linux-chrome>`.

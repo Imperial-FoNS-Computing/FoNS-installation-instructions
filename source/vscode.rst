@@ -72,8 +72,8 @@ then you'll need to do a little more setup from inside the program itself,
 following the instructions `on the Microsoft Visual Studio Code website
 <https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line>`__.
 
-Installing Visual Studio Code on Linux
---------------------------------------
+Installing Visual Studio Code on Linux or Chrome OS [#Chrome]_
+--------------------------------------------------------------
 
 Microsoft provide Visual Studio Code packages for a number of Linux
 distributions. See the `Visual Studio Code Linux installation webpage
@@ -123,3 +123,7 @@ Sending text to terminal
     }
 
 Note that this is a `json` file format; so, each keybinding is in a separate pair of `{ }`'s, each keybinding specification then separated by commas.
+
+.. rubric:: Footnotes
+
+.. [#Chrome] To use these installation instructions for Chrome OS you first need to :ref:`set up Linux on your Chromebook <linux-chrome>`.

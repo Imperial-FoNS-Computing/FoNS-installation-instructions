@@ -51,8 +51,8 @@ Head to the `MacTeX website
 <http://www.tug.org/mactex/mactex-download.html>`__ and follow the instructions
 there.
 
-Installing LaTeX on Linux
--------------------------
+Installing LaTeX on Linux or ChromeOS [#Chrome]_
+------------------------------------------------
 
 All of the LaTeX distributions ship LaTeX via their package manager. LaTeX is
 very large, so often the distributions will split it into several packages and
@@ -74,3 +74,7 @@ For Fedora, you would run:
 
 More details can be found on the `Fedora LaTeX website
 <https://docs.fedoraproject.org/en-US/neurofedora/latex/>`__.
+
+.. rubric:: Footnotes
+
+.. [#Chrome] To use these installation instructions for Chrome OS you first need to :ref:`set up Linux on your Chromebook <linux-chrome>`.

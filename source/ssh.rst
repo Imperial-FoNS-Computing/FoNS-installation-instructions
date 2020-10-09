@@ -27,8 +27,8 @@ SSH on Mac
 
 All recent versions of MacOS come with ssh installed. 
 
-SSH on Linux
-------------
+SSH on Linux or Chrome OS [#Chrome]_
+------------------------------------
 
 SSH is usually installed on Linux machines by default. In the unlikely event
 that it's not installed, it will be available using your distribution's package
@@ -37,3 +37,7 @@ manager. For example on Ubuntu and related distributions, you would type:
 .. code-block:: console
 
     $ sudo apt install ssh-client
+
+.. rubric:: Footnotes
+
+.. [#Chrome] To use these installation instructions for Chrome OS you first need to :ref:`set up Linux on your Chromebook <linux-chrome>`.
