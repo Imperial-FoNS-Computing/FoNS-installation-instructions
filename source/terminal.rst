@@ -67,6 +67,8 @@ If you have :ref:`set up Linux on your Chromebook <linux-chrome>` then you can
 open a terminal by pressing :kbd:`search` (:kbd:`🔍` or :kbd:`⊙`) and type
 `Terminal` then :kbd:`enter`.
 
+.. _terminal-vscode:
+
 Opening a terminal within Visual Studio Code
 --------------------------------------------
 

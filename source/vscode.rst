@@ -124,6 +124,134 @@ Sending text to terminal
 
 Note that this is a `json` file format; so, each keybinding is in a separate pair of `{ }`'s, each keybinding specification then separated by commas.
 
+Live Share
+----------
+
+One of the key advantages of Visual Studio Code is its Live Share extension.
+Live Share enables two or more programmers to each run Visual Studio Code on
+their own computers but to see and edit the same files in real time, and to see
+each other's cursors as they edit. Live Share can make collaboration much
+easier, and it also facilitates remote computer lab sessions: the remote
+equivalent of having an instructor look over your shoulder at the screen is to
+Live Share your session with them. Live Share takes a lot less bandwidth than
+sharing your screen and because each participant uses their own IDE, they can
+independently set factors such as the font size to settings that are legible for
+them. There is also a Live Share Audio extension that enables you to talk with
+your collaborators, though you can also use a simultaneous call on another
+platform such as MS Teams or Zoom.
+
+.. warning: Live Share does not share Jupyter notebook sessions.
+
+    The current (as of October 2020) Live Share capabilities of Visual Studio
+    Code do not extend to sharing Jupyter notebook sessions. If you need to
+    share a Jupyter notebook session then you currently need to share your
+    screen using, for example, MS Teams.
+
+Installing the Live Share extension
+...................................
+
+Click on the extensions icon, |extension|, in the left hand bar in Visual Studio
+Code. In the search box which appears, type `Live Share` then :kbd:`enter`.
+Click on the `install` button under the `Live Share` extension. Once the
+extension is installed, you should see |liveshare| at the bottom of your Visual
+Studio Code screen.
+
+Starting a Live Share
+.....................
+
+Using Live Share requires that you log in using either a Microsoft or a GitHub
+account. If you have neither, then :ref:`follow these instructions to sign up to
+GitHub <github_signup>`. Next click on |liveshare| and sign in when prompted.
+Once you have signed in, you will see the following:
+
+.. image:: _static/vscode_start_liveshare.*
+
+At this stage, the Live Share link has been copied to your clipboard. To invite
+someone else to join your session, you just need to provide them with this link.
+For example you could email it to them, or paste it into a chat message. You
+also have the opportunity at this stage to switch the session to read only,
+which means that your collaborator will be able to see your session but not edit
+your files.
+
+Joining a Live Share
+....................
+
+If a collaborator passes you a Live Share link then you can usually simply click
+on it. This will open a web browser and, assuming you have Visual Studio Code
+installed, the browser will ask you if you want to open Visual Studio Code. You
+should agree. Alternatively, if you don't have Visual Studio Code installed,
+you can click on the link to join from your browser. If you do have Visual
+Studio Code installed but are not prompted to join the session live, then you
+can follow the link to join manually, which will give you instructions as to
+where to paste the link in Visual Studio Code itself.
+
+Participating in a Live Share
+.............................
+
+All participants in a Live Share can see all the files in the project, and each
+others cursors. If there Live Share permits editing (the default), then all
+participants can also edit the files. The image below shows a Live Share session
+in progress. The local user's cursor is visible in grey while the remote
+participant's is orange:
+
+.. image:: _static/vscode_participate_liveshare.*
+
+The other new image on the screen is the little pin at top right: |pin|. When
+this pin is selected, it turns green and indicates that this user is following
+the other participant. This means that as the other participant navigates from
+around the file or changes files, the display will jump around to follow them.
+If there are multiple participants, then you will be asked which participant to
+follow.
+
+Sharing a terminal
+..................
+
+By default, any :ref:`terminals <terminal-vscode>` that you have running from
+within Visual Studio code will not be shared. However, you can launch a shared
+terminal that your collaborators can see and (if you allow it) type in. Click on
+your name at the bottom of the Visual Studio Terminal and choose `Share Terminal`:
+
+.. image:: _static/vscode_share_terminal.*
+
+On the next page you can choose whether the other participants should be able to
+type into the terminal (read/write) or should only be able to watch your work.
+
+Ending the Live Share session
+.............................
+
+If you are the host of a Live Share, then you can end the session by clicking on
+the Live Share icon on the left, |liveshare_icon|, and then selecting the stop
+icon, |liveshare_stop|, which appears when you hover your mouse over the
+`SESSION DETAILS` bar: 
+
+.. image:: _static/vscode_stop_liveshare.*
+
+If you are another participant in a live share, just close the Visual Studio
+Code window for the Live Share session.
+
+Further documentation on Live Share
+...................................
+
+Microsoft publishes extensive documentation and tutorials about how to use Live
+Share on the `Visual Studio Live Share website <https://docs.microsoft.com/en-us/visualstudio/liveshare/>`__.
+
+.. |extension| image:: _static/vscode_extension.*
+    :height: 2ex
+
+.. |liveshare| image:: _static/vscode_liveshare.*
+    :height: 2ex
+
+.. |pin| image:: _static/vscode_pin.*
+    :height: 2ex
+
+.. |liveshare_icon| image:: _static/vscode_liveshare_icon.*
+    :height: 2ex
+
+.. |liveshare_stop| image:: _static/vscode_liveshare_stop.*
+    :height: 2ex
+
+
+
 .. rubric:: Footnotes
 
 .. [#Chrome] To use these installation instructions for Chrome OS you first need to :ref:`set up Linux on your Chromebook <linux-chrome>`.
