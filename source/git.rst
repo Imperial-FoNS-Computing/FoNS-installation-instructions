@@ -268,6 +268,8 @@ If you have a favourite text editor, you can set it using the `Software
 Carpentry instructions
 <https://swcarpentry.github.io/git-novice/02-setup/index.html>`_.
 
+.. _github_signup:
+
 Signing up to GitHub
 --------------------
 
