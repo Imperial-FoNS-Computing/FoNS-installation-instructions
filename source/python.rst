@@ -146,6 +146,8 @@ The `--user` option tells pip to just install for the current user. This is
 preferable to using `sudo` and to install packages globally, as it removes any
 risk of interfering with packages that the operating system needs.
 
+.. _python_virtual_environments:
+
 Python Virtual Environments
 ---------------------------
 
