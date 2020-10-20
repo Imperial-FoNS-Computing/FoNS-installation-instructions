@@ -124,6 +124,8 @@ Sending text to terminal
 
 Note that this is a `json` file format; so, each keybinding is in a separate pair of `{ }`'s, each keybinding specification then separated by commas.
 
+.. _vscode-liveshare:
+
 Live Share
 ----------
 
