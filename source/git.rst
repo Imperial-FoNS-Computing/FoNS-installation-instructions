@@ -459,7 +459,7 @@ the following:
 .. image:: _static/nano.*
 
 Now you can use the arrow keys and keyboard to delete "World" and replace it
-with "Mars!" (rememember the exclamation mark!) Don't try to move to the end of
+with "Mars!" (remember the exclamation mark!) Don't try to move to the end of
 the line by clicking with the mouse, that won't work (nano is far too basic for
 that!)
 
@@ -474,6 +474,8 @@ save to the same file:
 .. image:: _static/nano-write-out.png
 
 Next we quit nano by typing :kbd:`control` + :kbd:`X`.
+
+.. _commit_push:
 
 Committing our changes
 ~~~~~~~~~~~~~~~~~~~~~~
