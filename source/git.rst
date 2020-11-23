@@ -459,7 +459,7 @@ the following:
 .. image:: _static/nano.*
 
 Now you can use the arrow keys and keyboard to delete "World" and replace it
-with "Mars!" (rememember the exclamation mark!) Don't try to move to the end of
+with "Mars!" (remember the exclamation mark!) Don't try to move to the end of
 the line by clicking with the mouse, that won't work (nano is far too basic for
 that!)
 
@@ -474,6 +474,8 @@ save to the same file:
 .. image:: _static/nano-write-out.png
 
 Next we quit nano by typing :kbd:`control` + :kbd:`X`.
+
+.. _commit_push:
 
 Committing our changes
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -684,6 +686,30 @@ rendition of the exact changes that occurred at that commit. For example, if we
 click on the title of the commit that we just made, then we find:
 
 .. image:: _static/github_diff.*
+
+.. _git-hash:
+
+Reporting the commit hash
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Sometimes you might need to identify a particular commit, for example to submit
+a piece of coursework, or to identify the particular code about which you are
+asking for help. Git associates a unique string of characters with each commit.
+This is known as the commit hash, because it's a cryptographic hash value of the
+files in the commit. However it's not important how the commit hash is computed,
+all that one needs to know is that the hash value is sufficient for someone else
+who has access to your repository to find the exact commit that you mean. 
+
+It is possible to find the hash of a commit locally, in the copy of the
+repository on your computer. However this is a dangerous practice, because you
+might not have pushed that commit to GitHub, so you risk sending someone on a
+wild goose chase for a commit that they will never find. It is therefore a much
+better idea to grab the commit hash for the commit you want directly from the
+GitHub web interface. The most reliable way to find the commit hash is to follow
+the steps above to navigate to the commit in which you are interested. The
+commit has his the 40 character hexadecimal number on the right: in this case
+`5a4a79c81244ed278a14e239eb59c29b218d85ce`.
+
 
 Autograding
 ~~~~~~~~~~~
